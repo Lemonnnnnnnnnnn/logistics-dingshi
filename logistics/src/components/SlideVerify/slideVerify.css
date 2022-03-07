@@ -1,0 +1,74 @@
+.slideVerifyWrap{
+  display: inline-block;
+  user-select: none;
+}
+
+.slideVerifyWrap .imgWrap{
+  position: relative;
+  transform-origin: left top;
+}
+
+.slideVerifyWrap .bigImg{
+}
+
+.slideVerifyWrap .smallImg{
+  position: absolute;
+  left: 0;
+}
+
+.slideVerifyWrap .slideBar{
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  line-height: 35px;
+  margin-top: 13px;
+  margin-left: -3px;
+  background: #DFE1E2;
+  color: #45494c;
+  border-radius: 20px;
+  border: 1px solid #e4e7eb;
+  box-sizing: border-box;
+}
+
+.slideVerifyWrap .slideMask{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 40px;
+  border: 0 solid #1991FA;
+  border-top-left-radius: 20px;
+  -webkit-border-top-left-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  border-bottom-left-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  background: #D1E9FE;
+}
+
+.slideVerifyWrap .slideMask.sliding{
+  border: 1px solid #1991FA;
+}
+
+.slideVerifyWrap .slideBlock{
+  position: absolute;
+  top: -9px;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  background: #fff;
+  border-radius: 33px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  transition: background .2s linear;
+  cursor: grab;
+  color: #1991FA;
+}
+
+.slideVerifyWrap .slideBlock:hover{
+  background: #1991FA;
+  color: #fff;;
+}
+
+.slideVerifyWrap  .tips{
+  color: #88949d;
+}

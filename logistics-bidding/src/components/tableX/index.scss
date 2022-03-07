@@ -1,0 +1,47 @@
+.xSearchForm {
+  :global {
+    .ant-form {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .formItem {
+      display: flex;
+    }
+
+    .ant-select-selection--single {
+      width: 200px;
+    }
+
+    .ant-form-item {
+      display: flex;
+      margin-right: 15px;
+      margin-top: 15px;
+    }
+
+    .ant-btn {
+      margin-right: 15px;
+    }
+  }
+}
+
+
+.editTable {
+  :global{
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+
+
+  .editBtn {
+    margin: 10px 0 0;
+
+    :global{
+      .ant-btn{
+        width: 100%;
+      }
+    }
+  }
+}

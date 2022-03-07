@@ -1,0 +1,13 @@
+import React from 'react';
+import { FORM_MODE } from '@gem-mine/antd-schema-form';
+import OrganizationManage from '../organization-certification/organization-manage';
+import { CARGO_OBJ } from '../../../../constants/organization/organization-type';
+
+const { ADD, DETAIL } = FORM_MODE;
+
+export default ({ location }) => {
+  const { organizationId: organizationsId } = location.query;
+  const mode = location.pathname.endsWith('detail') ? DETAIL : ADD;
+
+  return <OrganizationManage organizationsId={organizationsId} mode={mode} organization={CARGO_OBJ} />;
+};

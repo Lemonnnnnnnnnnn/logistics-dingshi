@@ -1,0 +1,20 @@
+.guestWrap{
+  padding: 20px 0;
+  text-align: center;
+}
+
+.guestWrap img{
+  width: 106px;
+  margin-bottom: 15px;
+}
+
+.guestWrap .tip{
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.guestWrap .description{
+  font-size: 12px;
+  color: #888;
+}

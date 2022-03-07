@@ -1,0 +1,37 @@
+.formEdit  {
+  :global {
+    .ant-form-item {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+
+      .ant-form-item-label {
+        width: 150px;
+        letter-spacing: 3px;
+        // text-align: left;
+      }
+
+      .ant-select-selection, .ant-input, .ant-radio-group {
+        width: 300px;
+      }
+      .min-width {
+        width: 110px !important;
+        .ant-select-selection {
+          width: 110px;
+          border-right: 0;
+          border-bottom-right-radius: 0;
+          border-top-right-radius: 0;
+        }
+      }
+      .min2-width {
+        width: 190px !important;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+
+        .ant-input {
+          width: 190px;
+        }
+      }
+    }
+  }
+}

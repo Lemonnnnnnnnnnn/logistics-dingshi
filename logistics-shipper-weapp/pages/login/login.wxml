@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="usermotto">
+    <view class="text-center font-blod">易键达司机端</view>
+    <block>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="/assets/favicon.png" mode="cover"></image>
+    </block>
+  </view>
+  <view class="userinfo mt20">
+    <button style="color:#444" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 进入小程序 </button>
+  </view>
+</view>

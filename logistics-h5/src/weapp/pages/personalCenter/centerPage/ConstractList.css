@@ -1,0 +1,11 @@
+.addButton{
+  width: 85%;
+  margin: 0 auto;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 22px;
+  position: absolute !important;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+}

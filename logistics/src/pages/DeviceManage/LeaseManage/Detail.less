@@ -1,0 +1,66 @@
+.detailList {
+	.addListBtn {
+		text-align: center;
+		margin-top: 15px;
+
+		:global {
+			.ant-btn-primary {
+				margin-right: 15px;
+			}
+		}
+
+		.redBtn {
+			background-color: #f7796c;
+			margin-right: 10px;
+			color: #fff;
+			border: 0;
+		}
+	}
+
+	.addListItem {
+		display: flex;
+		margin-bottom: 15px;
+    margin-top: 25px;
+
+		>span {
+			width: 100px;
+		}
+	}
+
+  .addListItem {
+    border-bottom: 1px solid #eee;
+    padding: 0 24px 10px;
+    color: #000;
+    font-weight: 500;
+
+    span {
+      color: #333;
+      font-size: 16px;
+    }
+  }
+
+  .detailInfo {
+    margin-bottom: 45px;
+
+    :global {
+      .ant-row {
+        margin-bottom: 15px;
+      }
+    }
+    .detailInfoItem {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        color: #666;
+
+        &:first-child {
+          color: #000;
+          font-weight: 500;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+

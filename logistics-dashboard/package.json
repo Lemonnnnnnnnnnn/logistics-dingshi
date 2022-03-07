@@ -1,0 +1,50 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "umi dev --port=8100",
+    "postinstall": "umi generate tmp",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage",
+    "dev:out": "copyfiles -f ./src/env/development_out/envConfig.ts ./src && umi dev --port=8100",
+    "dev:pro": "copyfiles -f ./src/env/production/envConfig.ts ./src && umi dev",
+    "build:test": "copyfiles -f ./src/env/development_out/envConfig.ts ./src && umi build",
+    "build:pro": "copyfiles -f ./src/env/production/envConfig.ts ./src && umi build"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.6.2",
+    "@ant-design/pro-layout": "^6.5.0",
+    "@types/react-css-modules": "^4.6.4",
+    "copyfiles": "^2.4.1",
+    "dayjs": "^1.10.6",
+    "lodash": "^4.17.21",
+    "react": "17.x",
+    "react-amap": "^1.2.8",
+    "react-css-modules": "^4.7.11",
+    "react-dom": "17.x",
+    "react-rnd": "^10.3.4",
+    "redux-actions": "^2.6.5",
+    "umi": "^3.5.8"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@umijs/preset-react": "1.x",
+    "@umijs/test": "^3.5.8",
+    "lint-staged": "^10.0.7",
+    "prettier": "^2.2.0",
+    "typescript": "^4.1.2",
+    "yorkie": "^2.0.0"
+  }
+}

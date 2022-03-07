@@ -1,0 +1,79 @@
+.myDid {
+  padding: 20px;
+  margin-bottom: 20px;
+
+  .myDidContent {
+    margin-top: 20px;
+
+    .myDidContentTitle {
+      color: #999;
+      margin-bottom: 20px;
+    }
+  }
+
+  .didInfo {
+    margin-top: 20px;
+
+    :global {
+      .ant-form-item-control-input {
+        width: 300px;
+      }
+
+      .ant-upload-list {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .ant-form-item-label {
+        width: 120px;
+      }
+
+      .ant-upload-list-picture .ant-upload-list-item {
+        margin-right: 15px;
+      }
+    }
+
+    .uploadItem {
+      width: 100%;
+      display: flex;
+
+      :global {
+        .ant-form-item-control {
+          flex: 1;
+        }
+
+        .ant-form-item-control-input {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+.myDidPackageItemTitle {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+
+  :global {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.myDidPackageItemForm {
+  margin-top: 20px;
+
+  :global {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+
+    .ant-input {
+      width: 60px;
+    }
+  }
+
+}

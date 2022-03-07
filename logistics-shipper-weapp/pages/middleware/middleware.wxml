@@ -1,0 +1,11 @@
+<view wx:if="{{loading}}" class="container ">
+  <view class="usermotto">
+    <view class="text-center font-blod">易键达司机端</view>
+    <block>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="/assets/favicon.png" mode="cover"></image>
+    </block>
+  </view>
+  <button bindtap="backToWeb" class="back-button">
+    回到小程序
+  </button>
+</view>

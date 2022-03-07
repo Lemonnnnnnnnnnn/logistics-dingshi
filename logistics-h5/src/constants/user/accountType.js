@@ -1,0 +1,8 @@
+export const ACCOUNT_TYPE = {
+  MAIN_ACCOUNT: 1,
+  DRIVER_ACCOUNT: 2,
+  NORMAL_ACCOUNT: 3
+}
+
+
+

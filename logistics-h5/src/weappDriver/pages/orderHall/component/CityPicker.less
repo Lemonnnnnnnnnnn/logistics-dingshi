@@ -1,0 +1,104 @@
+.leftInput{
+  width: 130px;
+  border: none;
+  text-align: left;
+  padding-left: 15px;
+  font-size: 20px!important;
+  color: rgba(85, 85, 85, 1)
+}
+
+.rightInput{
+  width: 130px;
+  border: none;
+  text-align: right;
+  padding-right: 15px;
+  font-size: 20px!important;
+  color: rgba(85, 85, 85, 1)
+}
+
+.show_active{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 101;
+  animation: moveIn 0.3s ease-out forwards;
+}
+
+@keyframes moveIn
+{
+  from {left:100vw}
+  to {left:0}
+}
+
+@keyframes moveOut
+{
+  from {left:0}
+  to {left:100vw}
+}
+
+.init_active{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 100vw;
+  z-index: 101;
+}
+
+.leave_active{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 100vw;
+  z-index: 101;
+  animation: moveOut 0.3s ease-out forwards;
+}
+
+.cityList_container{
+  width: 100vw;
+  background-color: white;
+  height: 100vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.list_container{
+  padding: 15px 40px 15px 15px;
+  position: relative;
+  height: calc(100vh - 44px);
+  overflow-y: auto;
+  .navibar{
+    position: absolute;
+    right: 15px;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  .cityContainer{
+    width: 95%;
+    height: calc(100vh - 74px);
+    overflow: hidden;
+    &>div{
+      height: calc(100vh - 74px);
+      width: calc(100% + 8px);
+      overflow-y: auto;
+    }
+  }
+  .citySpan{
+    padding: 5px 25px;
+    background-color: rgba(248, 248, 248, 1);
+    margin: 5px 15px 5px 0;
+    display: inline-block;
+    font-size: 14px;
+    color: rgba(34, 34, 34, 1);
+  }
+  .activeCity{
+    background-color: rgba(46, 122, 245, 1);
+    color: white;
+  }
+}

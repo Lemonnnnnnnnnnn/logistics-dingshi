@@ -1,0 +1,46 @@
+.circleGray {
+  margin: 0 3px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  color: white;
+  padding: 2px 3px;
+  background-color: gray;
+}
+
+.circleGreen {
+  margin: 0 3px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  color: white;
+  padding: 2px 3px;
+  background-color: green;
+}
+
+.leftRightCircle {
+  &:extend(.boxLeft,.boxRight);
+}
+
+.boxLeft {
+  margin: 0 3px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  color: white;
+  padding: 2px 3px;
+  background-color: gray;
+}
+
+.boxRight {
+  background: linear-gradient(to right, green 50%, green 50%, gray 50%, gray 100%);
+}

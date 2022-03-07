@@ -1,0 +1,60 @@
+.modalContent {
+  flex-direction: column;
+  height: 150px;
+
+  :global {
+    .ant-form-item-label {
+      text-align: left !important;
+      flex: inherit !important;
+    }
+    .ant-form-item-control-input {
+      margin-top: 10px;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    .ant-radio-group {
+      width: 100% !important;
+
+      .ant-radio-wrapper {
+        width: 50%;
+        margin-right: 0;
+        line-height: 32px;
+      }
+    }
+  }
+}
+
+.commonHeader {
+  padding: 20px;
+
+  :global {
+    .ant-row-space-between {
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .ant-btn-primary {
+      margin-left: 20px;
+    }
+  }
+
+  .commonHeaderRight {
+    display: flex;
+    align-items: center;
+  }
+
+  .countDown {
+    background-color: #eee;
+    padding: 20px;
+    margin-left: 20px;
+
+    >span {
+      &:last-child {
+        color: #14428A;
+      }
+    }
+  }
+}
+

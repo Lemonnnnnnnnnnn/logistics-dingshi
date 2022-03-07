@@ -1,0 +1,42 @@
+.retreatItem {
+  .retreatItemTitle {
+    font-weight: 700;
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .retreatItemInfo {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-right: 0;
+    border-bottom: 0;
+
+    >div{
+      // width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    p {
+      display: flex;
+      flex-wrap: wrap;
+      flex: 1;
+      margin-bottom: 0;
+      line-height: 52px;
+
+
+      span {
+       flex: 1;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        text-align: center;
+
+        &:nth-child(2n-1 ) {
+          font-weight: 600;
+          width: 100px;
+          text-align: right;
+        }
+      }
+    }
+  }
+}

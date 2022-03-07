@@ -1,0 +1,229 @@
+.order_title{
+  display: flex;
+  height: 47px;
+  justify-content: space-between;
+  padding: 12px 15px;
+  background-color: white;
+  span:nth-child(1){
+    color: #222222;
+    font-size: 17px;
+  }
+  span:nth-child(2){
+    font-size: 17px;
+  }
+  .paid{
+    color: #FFBF12;
+  }
+  .unpaid{
+    color: #999999;
+  }
+}
+
+
+.line_box{
+  width: 100%;
+  background-color: white;
+  padding: 0 15px;
+  div{
+    width: calc(100vw - 30px);
+    margin: 0 auto;
+    border-bottom: 1px solid #0000001a;
+  }
+}
+
+.userInfo_box{
+  height: 88px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  background-color: white;
+  .info_box{
+    display: flex;
+    div{
+      p{
+        margin: -3px 0 0;
+        padding: 0;
+      }
+      p:nth-child(1){
+        color: rgba(34, 34, 34, 1);
+        font-size: 17px;
+        margin-bottom: 5px;
+      }
+      p:nth-child(2){
+        color: rgba(153, 153, 153, 1);
+        font-size: 14px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        span:nth-child(2){
+          display: block;
+          margin: 0 10px;
+          height: 10px;
+          width: 1px;
+          border-right: 1px solid rgba(153, 153, 153, 1);
+        }
+      }
+    }
+    img{
+      height: 44px;
+      width: 44px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+  }
+  img{
+    height: 44px;
+    width: 44px;
+    
+  }
+}
+
+.detail_box{
+  border-radius: 4px;
+  width: calc(100vw - 15px);
+  min-height: calc(100vh - 220px);
+  background-color: white;
+  margin: 15px auto 0;
+  padding: 15px;
+  position: relative;
+  header{
+    height: 24px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+  }
+  header span{
+    font-size: 14px;
+    color: rgba(153, 153, 153, 1);
+  }
+  header span:nth-child(2){
+    display: inline-block;
+    width: 160px;
+  }
+  .statusPic{
+    width: 80px;
+    height: 70px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+}
+
+.line{
+  margin-top: 15px;
+  border-bottom: 1px solid rgba(248, 248, 248, 1);
+  width: 100%;
+  margin-bottom: 15px;
+}
+.line0{
+  margin-top: 3px;
+  border-bottom: 1px solid rgba(248, 248, 248, 1);
+  width: 100%;
+  margin-bottom: 15px;
+}
+.itemBox{
+  color: rgba(153, 153, 153, 1);
+  font-size: 14px;
+  p{
+    margin: 0 0 15px;
+    padding: 0;
+  }
+}
+
+.green{
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #35D12F;
+}
+
+.yellow{
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #FFBF12;
+}
+
+.btn_box{
+  width: 100vw;
+  position: fixed;
+  bottom: 10px;
+  padding: 0 15px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  span:nth-child(1) {
+    color: #2E7AF5;
+    font-size: 22px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+  }
+  .btn_blue{
+    display: block;
+    background-color: #2E7AF5;
+    border: 0;
+    width: 120px;
+    border-radius: 4px;
+    color: white;
+    height: 40px;
+    text-align: center;
+    font-size: 17px;
+  }
+}
+
+.circle_container{
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.description{
+  margin-bottom: 3px;
+}
+
+:global .paymentBill_detailPage_item_step_colorful{
+  .am-steps-item-title{
+    width: 270px;
+    color: #222222;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .am-steps-item-description{
+    width: 75vw;
+    color: #999999;
+    font-size: 14px;
+  }
+}
+
+.info_p{
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+  span:nth-child(1) {
+    color: #222222;
+  }
+  span:nth-child(2) {
+    color: #999999;
+  }
+}
+
+.total{
+  span:nth-child(2) {
+    color: #222222;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+}
+
+.virtualAccountBalance{
+  font-size: 14px;
+  color: #999999;
+  text-align: left;
+  margin: 0;
+}

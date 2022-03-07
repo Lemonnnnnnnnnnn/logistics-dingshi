@@ -1,0 +1,36 @@
+.markerBox {
+  position: relative;
+  top: -7px;
+  left: -50%;
+  text-align: center;
+  margin-left: 22px; 
+}
+.markerTextBox {
+  width: 90px;
+  height: 50px;
+  margin-top: -5px;
+}
+.markerProjectName {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #0d0d0d;
+  font-size: 14px;
+}
+.markerReceivingName {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #999;
+  font-size: 14px;
+}
+.markerDisabled {
+  position: absolute;
+  top: -19px;
+  left: 37px;
+  color: #FFF;
+}

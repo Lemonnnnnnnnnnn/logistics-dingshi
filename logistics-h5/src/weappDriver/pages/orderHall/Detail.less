@@ -1,0 +1,272 @@
+@import './ListIndex.less';
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  .userInfo_box{
+    height: 88px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    background-color: white;
+    .info_box{
+      display: flex;
+      div{
+        p{
+          margin: -3px 0 0;
+          padding: 0;
+        }
+        p:nth-child(1){
+          color: rgba(34, 34, 34, 1);
+          font-size: 17px;
+          margin-bottom: 5px;
+        }
+        p:nth-child(2){
+          color: rgba(153, 153, 153, 1);
+          font-size: 14px;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          span:nth-child(2){
+            display: block;
+            margin: 0 10px;
+            height: 10px;
+            width: 1px;
+            border-right: 1px solid rgba(153, 153, 153, 1);
+          }
+        }
+      }
+      img{
+        height: 44px;
+        width: 44px;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+    }
+    img{
+      height: 44px;
+      width: 44px;
+
+    }
+  }
+  header{
+    height: 24px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+  }
+  header span{
+    font-size: 14px;
+    color: rgba(153, 153, 153, 1);
+  }
+  header span:nth-child(2){
+    display: inline-block;
+    width: 150px;
+  }
+  .line{
+    margin-top: 15px;
+    border-bottom: 1px solid rgba(248, 248, 248, 1);
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .line0{
+    margin-top: 3px;
+    border-bottom: 1px solid rgba(248, 248, 248, 1);
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .itemBox{
+    color: rgba(153, 153, 153, 1);
+    font-size: 14px;
+    p{
+      margin: 0 0 15px;
+      padding: 0;
+    }
+  }
+}
+
+:global .prebooking_detailPage_item_step_colorful{
+  .am-steps-item-title{
+    width: 270px;
+    color: #222222;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .am-steps-item-description{
+    width: 75vw;
+    color: #999999;
+    font-size: 14px;
+  }
+}
+
+.circle_container{
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gray{
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: rgba(153, 153, 153, 1);
+}
+
+.green{
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #35D12F;
+}
+
+.yellow{
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #FFBF12;
+}
+
+.btn_box{
+  width: 100vw;
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  .btn_blue{
+    display: block;
+    background-color: #2E7AF5;
+    border: 0;
+    width: calc(100vw - 30px);
+    margin: 0 auto;
+    border-radius: 4px;
+    color: white;
+    height: 47px;
+    text-align: center;
+    font-size: 17px;
+  }
+}
+
+.padding_box{
+  height: 90px;
+  width: 100%;
+}
+
+.detail_box{
+  border-radius: 4px;
+  width: calc(100vw - 15px);
+  min-height: calc(100vh - 118px);
+  background-color: white;
+  margin: 15px auto 0;
+  padding: 15px;
+  position: relative;
+  .statusPic{
+    width: 80px;
+    height: 70px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .qrCode{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    img{
+      width: 120px;
+      height: 120px;
+    }
+  }
+}
+
+.tab{
+  background-color: #35D12F;
+  color: white;
+  font-size: 12px;
+  border-radius: 0 4px 0 10px;
+  position: absolute;
+  width: 75px;
+  line-height: 30px;
+  text-align: center;
+  right: 0px;
+  top: 0px;
+  padding: 0 13px;
+  height: 30px;
+}
+
+.rate_container{
+  padding: 15px 15px 0;
+  border-radius: 4px;
+  .box{
+    position: relative;
+    border-radius: 4px;
+    padding: 15px;
+    background-color: white;
+    h3{
+      font-size: 18px;
+      color: #222222;
+      font-weight: bold;
+    }
+    .rate_item{
+      display: flex;
+      align-items: center;
+      height: 30px;
+      span:nth-child(1) {
+        display: block;
+        margin-top: 5px;
+        margin-right: 10px;
+        line-height: 32px;
+        height: 32px;
+      }
+    }
+  }
+}
+
+.operation_icon{
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 24px;
+  height: 24px;
+}
+
+.btn_container{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 10px;
+  button{
+    width: 81px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    border: 0;
+    margin-left: 15px;
+  }
+  button:nth-child(2) {
+    color: #999999;
+    background-color: #F2F2F2;
+  }
+  button:nth-child(1) {
+    color: white;
+    background-color: #2E7AF5;
+  }
+  button:nth-child(1):hover{
+    background-color: rgb(19, 93, 211);
+  }
+}
+
+.description{
+  margin-bottom: 3px;
+}
+
+.qrcode_word {
+  color: rgba(153, 153, 153, 1)!important;
+  font-size: 14px!important;
+  margin-bottom: 0!important;
+}

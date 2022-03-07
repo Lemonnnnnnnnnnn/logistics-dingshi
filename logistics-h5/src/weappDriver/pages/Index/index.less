@@ -1,0 +1,77 @@
+.tabs{
+  background: #fff;
+  display: flex;
+}
+
+.tabs .tabItem{
+  display: inline-block;
+  width: 110px;
+  padding: 12px 20px 12px 0;
+  font-size: 16px;
+  color: #222;
+  vertical-align: bottom;
+  text-align: center;
+}
+
+.tabs .tabItem.on{
+  font-weight: bold;
+  color: #2E7AF5;
+}
+
+.goodsPlanList{
+  height: 100%;
+  position: relative;
+}
+
+.flex_container{
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 5px;
+  height: 70px;
+  background-color: white;
+}
+
+.incomeItem {
+  width: 33.33%;
+  text-align: center;
+  .number_style {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 35px;
+    height: 35px;
+  }
+  .word_style {
+    font-size: 14px;
+    line-height: 25px;
+    height: 25px;
+    color: #999999;
+  }
+}
+
+.goodsPlanList :global(.am-search){
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #fff;
+}
+
+.goodsPlanList :global(.am-search-input){
+  background: #F8F8F8;
+  border-radius: 15px;
+  text-align: left;
+}
+
+.goodsPlanList :global(.am-search-synthetic-ph){
+  text-align: left;
+  padding-left: 15px;
+}
+
+.goodsPlanList :global(.am-search-cancel){
+  color: #333;
+  font-size: 14px;
+}
+
+.goodsPlanList :global(.am-list-view-scrollview){
+  margin-top: 12px;
+}

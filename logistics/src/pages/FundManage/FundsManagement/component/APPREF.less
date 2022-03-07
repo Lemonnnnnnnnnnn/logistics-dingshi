@@ -1,0 +1,133 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .form{
+    width: 100%;
+    .required{
+      font-size: 12px;
+      color: #999999;
+    }
+    .item{
+      width: 380px;
+      margin: 0 auto;
+    }
+    .item_button{
+      display: flex;
+      justify-content: flex-end;
+      margin: 15px 15px 0
+    }
+  }
+}
+
+.footer_tips{
+  background-color: rgba(248, 248, 248, 0.874509803921569);
+  padding: 15px;
+  width: 100%;
+  padding-left: 80px;
+  margin-top: 25px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 120px;
+  p{
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: #999999;
+  }
+}
+
+.refund_info{
+  background-color: rgba(248, 248, 248, 0.874509803921569);
+  padding: 15px;
+  width: 100%;
+  padding-left: 15px;
+  p{
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: #999999;
+  }
+  .info_label{
+    font-size: 14px;
+  }
+  .info_content{
+    font-size: 14px;
+    color: #333333
+  }
+}
+
+.tips_red{
+  width: 100%;
+  color: red;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.tips_gray{
+  display: block;
+  width: 380px;
+  margin: 20px 0 5px;
+  span:nth-child(1) {
+    color: #333333;
+  }
+  span:nth-child(2) {
+    color: #999999;
+    font-size: 12px;
+  }
+}
+
+.cardNo{
+  font-weight: 650;
+  font-style: normal;
+  font-size: 22px;
+  color: #333333;
+  margin-bottom: 5px;
+  input{
+    font-weight: 650;
+    font-style: normal;
+    font-size: 22px!important;
+    color: #333333;
+    height: 50px;
+  }
+  input::placeholder {
+    font-size: 14px;
+    font-weight: normal;
+  }
+}
+
+.phoneNo{
+  font-weight: 650;
+  font-style: normal;
+  font-size: 17px;
+  color: #1890FF;
+  margin-bottom: 15px;
+}
+
+.invoiceTitle{
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(127, 127, 127, 0.941176470588235);
+  font-size: 14px;
+}
+
+.btn_box{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+  button{
+    margin-right: 10px;
+  }
+}
+
+.appref_textArea_box{
+  width: 380px;
+  margin: 0 auto;
+  :global .ant-form-item-control{
+    width: 380px!important;
+  }
+}

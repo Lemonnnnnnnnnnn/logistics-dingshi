@@ -1,0 +1,134 @@
+.container{
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  padding: 15px;
+  .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .title_text {
+      color: rgba(34, 34, 34, 1);
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .count {
+      margin-left: 10px;
+      color: rgba(153, 153, 153, 1);
+      font-size: 14px;
+    }
+  }
+  .add_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    width: 100%;
+    img{
+      margin-right: 10px;
+    }
+    span{
+      color: rgba(46, 122, 245, 1);
+      font-size: 17px;
+    }
+  }
+  .tip_box{
+    color: rgba(85, 85, 85, 1);
+    font-size: 17px;
+    height: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &>div>img{
+      margin-right: 15px;
+    }
+    &>img{
+      height: 16px;
+      width: 16px;
+    }
+  }
+}
+
+.shadow{
+  box-shadow: 0 0 10px rgb(240, 240, 240);
+  border-radius: 4px;
+  margin-top: 15px;
+  .left_box{
+    span{
+      color: rgba(85, 85, 85, 1);
+      font-size: 17px;
+    }
+  }
+}
+
+.bank_card{
+  margin-top: 15px;
+  padding: 13px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  .cardType{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    span{
+      margin-left: 5px;
+      border-radius: 0 4px 0 10px;
+      display: block;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 1);
+      height: 30px;
+      padding: 0 18px;
+      line-height: 30px;
+    }
+    .receive{
+      background-color: rgba(245, 64, 64, 1);
+    }
+    .pay{
+      background-color: rgba(46, 122, 245, 1);
+    }
+  }
+  h3{
+    margin: 0;
+    margin-bottom: 3px;
+  }
+  img{
+    margin-right: 15px;
+  }
+  .bank_name{
+    color: rgba(153, 153, 153, 1);
+    font-size: 14px;
+  }
+  
+  .bank_account{
+    color: rgba(34, 34, 34, 1);
+    font-size: 22px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .maxWidth{
+    width: 100%;
+  }
+}
+
+.noBankCard{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 15px;
+  p{
+    color: rgba(195, 195, 195, 1);
+    font-size: 14px;
+    margin-top: 10px; 
+  }
+}
+
+.pad15{
+  padding: 15px;
+}

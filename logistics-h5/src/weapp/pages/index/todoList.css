@@ -1,0 +1,6 @@
+.todoList{
+}
+
+.todoList :global(.am-list-body::before),.todoList :global(.am-list-body::after){
+  display: none !important;
+}

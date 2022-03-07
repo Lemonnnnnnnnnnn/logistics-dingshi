@@ -1,0 +1,22 @@
+.module-auth-name, .page-auth-block{
+  display: inline-block;
+  margin: 0 30px 20px 0;
+  vertical-align: top;
+}
+
+.page-auth{
+  margin-bottom: 20px;
+}
+
+.page-auth-name{
+  display: inline-block;
+  width: 10em;
+  color: #1890FF;
+  margin-right: 30px;
+  text-align: right;
+}
+
+.button-auth{
+  margin-right: 20px;
+  cursor: pointer;
+}

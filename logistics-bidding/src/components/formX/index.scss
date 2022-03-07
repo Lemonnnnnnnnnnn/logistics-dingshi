@@ -1,0 +1,13 @@
+.xSearchForm {
+  :global{
+    .ant-form-item {
+      margin-right: 0!important;
+    }
+    .ant-form-item-label {
+      width: 130px;
+    }
+    .ant-input, .ant-picker-range, .ant-select, .ant-select-selector {
+      width: 250px;
+    }
+  }
+}

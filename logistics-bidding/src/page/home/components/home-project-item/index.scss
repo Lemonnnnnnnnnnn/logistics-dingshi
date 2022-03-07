@@ -1,0 +1,131 @@
+.homeProjectItem {
+  width: 570px;
+  //height: 248px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+
+  .homeProjectContent {
+    flex: 1;
+    padding-top: 20px;
+    position: relative;
+
+    >h2 {
+      display: flex;
+      padding: 0 20px;
+      justify-content: space-between;
+      font-size: 15px;
+      color: #333333;
+      font-weight: 400;
+
+      img {
+        width: 22px;
+        height: 22px;
+      }
+    }
+
+    .homeGoodsBox {
+      display: flex;
+      padding: 0 20px;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 20px;
+
+      .homeGoods {
+        display: flex;
+
+        >span {
+          color: #333333;
+          font-weight: bold;
+          font-size: 14px;
+        }
+
+        .homeGoodsFont {
+          >p {
+            font-size: 14px;
+            color: #999999;
+            display: flex;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      .homeGoodsIcon {
+        display: flex;
+        color: #2A9941;
+        padding: 0 20px;
+        align-items: center;
+        font-size: 15px;
+
+        img {
+          width: 43px;
+          height: 43px;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .homeDate {
+      display: flex;
+      align-items: center;
+      color: #333333;
+      font-weight: bold;
+      margin-top: 5px;
+      font-size: 14px;
+      //padding: 0 20px;
+      //margin-bottom: 38px;
+
+      span {
+        &:last-child {
+          font-weight: normal;
+        }
+      }
+  }
+
+    .homeProjectItemAddress {
+      display: flex;
+      align-items: center;
+      width : 100%;
+      padding: 0 20px 10px;
+      justify-content: space-between;
+      position: absolute;
+      bottom: 0;
+
+      span {
+        font-size: 12px;
+        color: #999999;
+
+        span {
+          color: #F4523B;
+          padding: 0 5px;
+        }
+
+        img {
+          width: 12px;
+          height: 12px;
+          margin-right: 3px;
+        }
+      }
+    }
+
+  }
+
+  .homeProjectItemCompany {
+    height: 47px;
+    margin: 0;
+    color: #999999;
+
+    .line {
+      height: 1px;
+      margin-bottom: 10px;
+      background-color:#DDDDDD;
+    }
+
+    span {
+      padding: 0 20px;
+    }
+  }
+}

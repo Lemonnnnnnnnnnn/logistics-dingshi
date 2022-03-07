@@ -1,0 +1,39 @@
+.basicsInfo {
+  padding: 20px 20px 20px 15px;
+
+  :global {
+    .ant-form-item .ant-select, .ant-form-item .ant-cascader-picker{
+      width : 285px
+    }
+  }
+
+  .basicsInfoRadio {
+    :global {
+      .ant-radio-group {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .basicsInfoRadioInput {
+      margin-bottom: 0;
+      margin-right: 10px;
+
+      :global {
+        .ant-input {
+          width: 80px;
+          margin-left: -12px;
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+
+  .basicsInfoTop {
+    :global {
+      .ant-radio-group {
+        margin-top: 5px;
+      }
+    }
+  }
+}

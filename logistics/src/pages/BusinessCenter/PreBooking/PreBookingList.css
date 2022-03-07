@@ -1,0 +1,21 @@
+.qrCode{
+  width: 350px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.prebookingNo{
+  margin: 15px 0;
+}
+
+.mar0 {
+  margin: 0;
+}
+
+.textCenter{
+  text-align: center;
+}
+
+.ft13{
+  font-size: 13px;
+}

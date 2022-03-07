@@ -1,0 +1,26 @@
+
+.mobile-form .am-list-line .am-list-extra {
+  flex-basis:65%
+}
+
+
+.mobile-form{
+  margin-bottom: 50px;
+}
+
+.mobile-form a:hover {
+  color: inherit;
+}
+
+.mobile-form .am-button:hover {
+  color: #fff;
+}
+
+.mobile-form .am-button {
+  color: #fff;
+}
+
+
+.mobile-button a:hover{
+  color: inherit;
+}

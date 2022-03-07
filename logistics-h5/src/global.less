@@ -1,0 +1,557 @@
+html,
+body,
+#root {
+  height: 100%;
+  background: rgb(245,245,245);
+}
+@supports (bottom: constant(safe-area-inset-bottom)) or (bottom: env(safe-area-inset-bottom)){ //支持env(safe-area-inset-bottom)
+  .am-tabs-bottom .am-tabs-tab-bar-wrap::after{
+    content: '';
+    height: env(safe-area-inset-bottom);
+    background:white;
+    width: 100%;
+    display: block;
+    position: fixed;
+    bottom: 0
+  }
+  #root {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .iphone-save-margin-bottom::after{
+    content: '';
+    height: env(safe-area-inset-bottom);
+    width: 100%;
+    display: block;
+    background:white;
+  }
+}
+
+// .am-tabs-bottom .am-tabs-tab-bar-wrap::after{
+//   content: '';
+//   height: 34px;
+//   background:white;
+//   width: 100%;
+//   display: block;
+//   position: fixed;
+//   bottom: 0
+// }
+
+
+
+// #root {
+//   padding-bottom: 34px;
+// }
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.globalSpin {
+  width: 100%;
+  margin: 40px 0 !important;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.ant-pagination {
+  text-align: right;
+}
+
+.ant-pagination-total-text{
+  float: left;
+}
+
+.ant-table-content{
+  border: 1px solid #e8e8e8;
+}
+
+.ant-table-tbody{
+  background: #fff;
+}
+
+.ant-pagination-item.ant-pagination-item-active{
+  background: #1890FF;
+}
+
+.ant-pagination-item.ant-pagination-item-active a{
+  color: #fff !important;
+}
+
+.mr-20{
+  margin-right: 20px;
+}
+
+.textRight{
+  text-align: right
+}
+
+.textCenter{
+  text-align: center;
+}
+
+.ant-table-pagination.ant-pagination{
+  float: none !important;
+}
+
+.ant-form-item{
+  margin-bottom: 0 !important;
+}
+
+.mr-10{
+  margin-right: 10px;
+}
+
+.ml-10{
+  margin-left: 10px;
+}
+
+.ml-20{
+  margin-left: 20px;
+}
+
+.mt-20{
+  margin-top: 10px !important;
+}
+.mt-10{
+  margin-top: 10px !important;
+}
+
+.mb-10{
+  margin-bottom: 10px !important;
+}
+
+.ant-table-thead > tr > th{
+  font-weight: bold !important
+}
+
+.goods_items_cell{
+  width:100px;
+  overflow: hidden;//盒子溢出隐藏
+  text-overflow:ellipsis;//文字溢出显示省略号
+  white-space: nowrap;//文字不换行
+}
+
+.color-gray{
+  color: #aaa;
+}
+
+.color-darkGray{
+  color: #666;
+}
+
+.displayNone {
+  // display: none !important;
+  visibility:hidden !important;
+}
+
+.fr{
+  float: right;
+}
+
+.breadcrumbs{
+  color: #999;
+}
+
+.breadcrumb-item{
+  cursor: default;
+  color: #5f5f5f;
+}
+
+.modal-box{
+  width: 700px !important;
+}
+
+.modal-box-big{
+  width: 1000px !important;
+}
+
+.test-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.breadcrumb-item{
+  cursor: pointer;
+}
+
+.fw-normal{
+  font-weight: normal;
+}
+
+.fw-bold{
+  font-weight: bold;
+}
+
+.fs-14{
+  font-size: 14px;
+}
+
+.fs-11{
+  font-size: 11px;
+}
+
+
+/* 以上为web样式 下方为mobile样式 */
+
+.am-list-content{
+  color: gray !important;
+  font-size: 14px !important
+}
+
+.am-list-extra{
+  //color: #333333 !important;
+  font-size: 15px !important
+}
+.formLabel {
+  margin: 0;
+  line-height: 1.5;
+  white-space: initial;
+  text-align: left;
+  vertical-align: top;
+  color: gray !important;
+  padding: 10px 0px 10px 15px;
+  font-size: 14px !important;
+  width: 85px;
+  display: inline-block;
+}
+
+.formControl {
+  display: inline-block;
+}
+
+.formControl::after {
+  position: absolute;
+  background-color: #ddd;
+  display: block;
+  z-index: 1;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1PX;
+  transform-origin: 50% 100%;
+  transform: scaleY(0.5);
+}
+
+html .am-list-item .am-input-label{
+  color: gray;
+  font-size: 14px !important
+}
+
+input{
+  font-size: 14px !important
+}
+
+.am-card:not(.am-card-full)::before{
+  border: none !important
+}
+
+.pick-list .am-list-item .am-list-line .am-list-extra{
+  flex-basis: 65%;
+  white-space: normal;
+  word-break: break-all;
+}
+
+.am-card:not(.am-card-full){
+  border-radius: 9px !important;
+}
+
+.no-division.am-card .am-card-body::before{
+  display: none;
+}
+
+.am-card.card-block{
+  padding-bottom: 15px
+}
+
+.card-block .am-card-header {
+  padding: 20px 15px 5px;
+}
+
+.am-button.primary, .am-button.ghost{
+  border-radius: 15px;
+}
+
+.am-button.primary{
+  background: #3197FB;
+  color: #fff
+}
+
+.am-button.ghost{
+  border: 1px solid #333 !important; /* no */
+  color: #333;
+}
+
+.list-line .am-list-item .am-list-line .am-list-extra{
+  flex-basis: 65%;
+  color: #333;
+}
+
+.list-line .am-list-body::before,.list-line .am-list-body::after,.list-line .am-list-line::after{
+  display: none !important;
+}
+
+.am-card-body .am-list-item{
+  padding-left: 0;
+}
+
+.am-card-body .am-list-line{
+  padding-right: 0;
+}
+
+//  给image-gallery-image组件增加全屏显示的样式; 全屏可滚动显示图片
+.image-gallery-content.fullscreen .image-gallery-image {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.am-textarea-label{
+  color: gray !important;
+  font-size: 14px !important;
+}
+
+
+.am-list-line::after {
+    position: absolute;
+    background-color: #ddd;
+    display: block;
+    z-index: 1;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1PX;
+    transform-origin: 50% 100%;
+    transform: scaleY(0.5);
+}
+
+.twoRowEllipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+}
+
+
+.singleRowEllipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;/* 超出部分显示省略号 */
+  white-space: nowrap;/*规定段落中的文本不进行换行 */
+}
+
+// 自定义消息中心cardHead样式
+.myCard-header {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  padding: 9px 15px;
+}
+.myCard-header-content {
+  flex: none;
+  text-align: left;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+.myCard-header-content img {
+  margin-right: 5px;
+}
+.myCard-header-extra {
+  flex: 1 1;
+  text-align: right;
+  font-size: 17px;
+  color: #888;
+}
+
+// 自定义司机端提货card样式
+.driverPickCard-body {
+  position: relative;
+  border-top: 1PX solid #ddd;
+  // padding: 15px 15px 6px;
+  font-size: 15px;
+  color: #333;
+  min-height: 40px;
+  flex: 1 1;
+}
+
+.driverPickCard-body .billNumber-item {
+  padding-left: 0;
+}
+
+.driverFieldInput-control, .billNumber-control {
+  font-size: 17px;
+  flex: 1 1;
+}
+
+.driverFieldInput-label-7 {
+  width: 119px;
+}
+
+.billNumber-label-7 {
+  width: 80px
+}
+
+.driverFieldInput-label, .billNumber-label {
+  word-break: break-all;
+}
+
+// .driverFieldInput-label {
+//   word-break: break-all;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   display: -webkit-box;
+//   -webkit-line-clamp: 3;
+//   -webkit-box-orient: vertical;
+// }
+
+.am-list-item .driverFieldInput-control input, .am-list-item .billNumber-control input {
+  color: #000;
+  font-size: 17px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  padding: 2px 0;
+  border: 0;
+  background-color: transparent;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+.driverFieldInput-control .fake-input-container, .billNumber-control .fake-input-container {
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+}
+
+// .am-list-item .am-input-control .fake-input-container {
+//   height: 30px;
+//   line-height: 30px;
+//   position: relative;
+// }
+
+.driverFieldInput-control .fake-input-container .fake-input-placeholder, .billNumber-control .fake-input-container .fake-input-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #bbb;
+  text-align: right;
+}
+
+.am-list-item .driverFieldInput-control .fake-input-container .fake-input, .am-list-item .billNumber-control .fake-input-container .fake-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-right: 5px;
+  -webkit-text-decoration: rtl;
+          text-decoration: rtl;
+  text-align: right;
+  color: #000;
+  font-size: 23px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.am-list-item .driverFieldInput-control .fake-input-container .fake-input.focus, .am-list-item .billNumber-control .fake-input-container .fake-input.focus {
+  transition: color 0.2s;
+}
+
+.am-list-item .driverFieldInput-control .fake-input-container .fake-input.focus:after, .am-list-item .billNumber-control .fake-input-container .fake-input.focus:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 10%;
+  height: 80%;
+  border-right: 1.5px solid #108ee9;
+  animation: keyboard-cursor infinite 1s step-start;
+}
+
+.driverFieldInput-item .am-list-line, .billNumber-item .am-list-line {
+  align-items: center;
+  min-height: 78px;
+  color:#0E1B42;
+  font-size:17px;
+  font-weight:500;
+  padding: 0;
+  // line-height:78px;
+}
+
+.billNumber-control input {
+  text-align: right;
+  color: rgba(14,27,66,1);
+  font-size: 17px !important;
+  font-weight:500;
+  line-height:24px;
+}
+
+.modalBox .am-modal-content {
+  border-radius: 15px;
+  padding: 17px;
+}
+
+.base-info .list-line .am-list-line {
+  padding: unset;
+}
+
+:global .am-calendar .content {
+  height: calc(100vh - 100px)!important;
+}
+
+.driverPickCard-body .am-list .am-list-body::before{
+  background-color: unset !important
+}
+
+.driverPickCard-body .am-list .am-list-body::after{
+  background-color: unset !important
+}
+
+.smallLabel {
+  font-size: 14px;
+}
+
+.choose_checkbox .am-checkbox.am-checkbox-checked .am-checkbox-inner{
+  border-color: #008124 !important;
+  background: #008124 !important;
+}
+
+.as_message{
+  p{
+    text-align: left;
+    margin-bottom: 10px;
+    span{
+      font-weight: bold;
+    }
+  }
+}
+
+.help_as{
+  .am-action-sheet-cancel-button{
+    background-color: #2E7AF5;
+    color: white;
+    height: 50px;
+  }
+}

@@ -1,0 +1,78 @@
+.noticeDetailHeaderCard {
+  width: 400px;
+  height: 100px;
+  background-color: #00782b;
+  padding: 20px;
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  color: #fff;
+
+  >div {
+    margin-right: 80px;
+
+    img {
+      margin-left: 40px;
+      width: 100px;
+    }
+
+    >p {
+      font-size: 14px;
+    }
+    >span {
+      font-size: 20px;
+    }
+  }
+
+  >p {
+    font-size: 24px;
+    margin-bottom: 0;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-weight: 600;
+      font-size: 13px;
+
+      &:first-child {
+        color: #f4ea2a;
+        font-size: 24px;
+        letter-spacing: 3px;
+      }
+
+      >img {
+        width: 22px;
+        height: 22px;
+      }
+    }
+
+    &.noticeDetailCardHasButton {
+      flex-direction: column;
+
+      span {
+        color: #f4ea2a;
+        font-size: 18px;
+      }
+
+      :global {
+        .ant-btn {
+          margin-top: 8px;
+          border-radius: 8px;
+
+          span {
+            font-size: 14px;
+            color: #fff;
+            font-weight: normal;
+            letter-spacing: normal;
+          }
+        }
+      }
+
+    }
+  }
+}

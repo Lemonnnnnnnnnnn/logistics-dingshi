@@ -1,0 +1,49 @@
+.tabs{
+  padding: 2px 5px;
+  background: #fff;
+}
+
+.tabs .tabItem{
+  display: inline-block;
+  width: 110px;
+  padding: 5px 10px;
+  color: #666;
+  vertical-align: bottom;
+  text-align: center;
+}
+
+.tabs .tabItem.on{
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+.goodsPlanList{
+  height: 100%
+}
+
+.goodsPlanList :global(.am-search){
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #fff;
+}
+
+.goodsPlanList :global(.am-search-input){
+  background: #F8F8F8;
+  border-radius: 15px;
+  text-align: left;
+}
+
+.goodsPlanList :global(.am-search-synthetic-ph){
+  text-align: left;
+  padding-left: 15px;
+}
+
+.goodsPlanList :global(.am-search-cancel){
+  color: #333;
+  font-size: 14px;
+}
+
+.goodsPlanList :global(.am-list-view-scrollview){
+  margin-top: 12px;
+}

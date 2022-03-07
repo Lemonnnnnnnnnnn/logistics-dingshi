@@ -1,0 +1,82 @@
+.tab_header{
+  height: 44px;
+  width: 100%;
+  background-color: white;
+  ul, li{
+    padding: 0;
+    margin: 0;
+  }
+  ul::after{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    content: '';
+    display: block;
+    width: 100%;
+    float: left;
+    margin-top: -2px;
+  }
+  li{
+    display: block;
+    padding: 10px 15px;
+    width: 90px;
+    text-align: center;
+    font-size: 17px;
+    color: rgba(34, 34, 34, 1);
+    float: left;
+  }
+  .active{
+    color: rgba(46, 122, 245, 1);
+    font-weight: bold;
+  }
+}
+
+.form_box{
+  width: calc(100vw - 15px);
+  margin: 15px auto 0;
+  background-color: white;
+  padding: 15px 15px 40px;
+  .btn_search{
+    margin-top: 40px;
+  }
+  .form_div{
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(248, 248, 248, 1);
+  }
+}
+
+:global .orderHall_index_NoticeBar{
+  .am-notice-bar-content{
+    color: rgba(255, 191, 18, 1);
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+:global .order_Hall_timePicker{
+  .am-list-content{
+    flex-basis: 40%!important;
+    font-size: 20px!important;
+    color: rgba(195, 195, 195, 1)!important;
+  }
+  .am-list-extra{
+    font-size: 20px!important;
+    color: #555555!important;
+    flex-basis: 60%!important;
+  }
+}
+
+.address_box{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  img{
+    width: 24px;
+    height: 24px;
+  }
+}
+
+:global .orderHall_index_schemaForm{
+  .am-list-line::after{
+    display: none!important;
+  }
+}

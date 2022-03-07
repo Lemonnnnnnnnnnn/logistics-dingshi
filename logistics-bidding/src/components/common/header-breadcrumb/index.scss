@@ -1,0 +1,17 @@
+.breadcrumb {
+  .breadcrumbImg {
+    height: 80px;
+    background-color: #ddd;
+
+    img{
+      height: 80px;
+      width: 100%;
+    }
+  }
+
+  .breadcrumbList {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px 0;
+  }
+}

@@ -1,0 +1,228 @@
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  border-radius: 3px;
+  grid-template-rows: 450px;
+
+  .items {
+    margin-left: -1px;
+    border: 1px solid rgba(217, 217, 217, 1);
+  }
+
+  .group {
+    border-radius: 3px 0 0 3px;
+    background-color: rgba(248, 248, 248, 1);
+
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 20px 15px 0 15px;
+      height: 60px;
+      margin-bottom: 20px;
+
+      .label {
+        width: 50px;
+      }
+    }
+    .group_item::-webkit-scrollbar {
+      /*滚动条整体样式*/
+      width: 10px;
+      /*高宽分别对应横竖滚动条的尺寸*/
+      height: 1px;
+    }
+
+    .group_item::-webkit-scrollbar-thumb {
+      /*滚动条里面小方块*/
+      border-radius: 10px;
+      background-color: skyblue;
+      background-image: -webkit-linear-gradient(45deg,
+          rgba(255, 255, 255, 0.2) 25%,
+          transparent 25%,
+          transparent 50%,
+          rgba(255, 255, 255, 0.2) 50%,
+          rgba(255, 255, 255, 0.2) 75%,
+          transparent 75%,
+          transparent);
+    }
+
+    .group_item::-webkit-scrollbar-track {
+      /*滚动条里面轨道*/
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+      background: #ededed;
+      border-radius: 10px;
+    }
+
+    .group_item {
+      padding: 0;
+      height: 360px;
+      overflow-y: auto;
+
+      li:last-child {
+        border-bottom: none;
+      }
+
+      .active {
+        background-color: white;
+      }
+
+      li {
+        cursor: pointer;
+        align-items: center;
+        padding: 14px 20px;
+        border-top: 1px solid rgba(217, 217, 217, 1);
+        display: flex;
+        justify-content: space-between;
+
+        .icon_div {
+          display: flex;
+          justify-content: space-around;
+
+          i {
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .cars {
+    padding: 15px 20px;
+
+    .card_title {
+      font-weight: 400;
+      font-style: normal;
+      font-size: 14px;
+      color: rgba(153, 153, 153, 0.65);
+      line-height: 23px;
+    }
+    .car_ul::-webkit-scrollbar {
+      /*滚动条整体样式*/
+      width: 10px;
+      /*高宽分别对应横竖滚动条的尺寸*/
+      height: 1px;
+    }
+
+    .car_ul::-webkit-scrollbar-thumb {
+      /*滚动条里面小方块*/
+      border-radius: 10px;
+      background-color: skyblue;
+      background-image: -webkit-linear-gradient(45deg,
+          rgba(255, 255, 255, 0.2) 25%,
+          transparent 25%,
+          transparent 50%,
+          rgba(255, 255, 255, 0.2) 50%,
+          rgba(255, 255, 255, 0.2) 75%,
+          transparent 75%,
+          transparent);
+    }
+
+    .car_ul::-webkit-scrollbar-track {
+      /*滚动条里面轨道*/
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+      background: #ededed;
+      border-radius: 10px;
+    }
+
+    .car_ul {
+      padding: 0;
+      height: 390px;
+      overflow-y: auto;
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 40px;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.65);
+        padding-right: 20px;
+
+        i {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .search {
+    padding: 0 20px;
+    border-radius: 0 3px 3px 0;
+
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 20px 15px 0 15px;
+      height: 60px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(217, 217, 217, 1);
+
+      .label {
+        width: 65px;
+      }
+    }
+
+    .car_ul {
+      padding: 0;
+      height: 370px;
+      overflow-y: auto;
+
+      li {
+        display: flex;
+        padding-left: 5px;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 40px;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.65);
+        padding-right: 20px;
+      }
+    }
+
+    .car_ul::-webkit-scrollbar {
+      /*滚动条整体样式*/
+      width: 10px;
+      /*高宽分别对应横竖滚动条的尺寸*/
+      height: 1px;
+    }
+
+    .car_ul::-webkit-scrollbar-thumb {
+      /*滚动条里面小方块*/
+      border-radius: 10px;
+      background-color: skyblue;
+      background-image: -webkit-linear-gradient(45deg,
+          rgba(255, 255, 255, 0.2) 25%,
+          transparent 25%,
+          transparent 50%,
+          rgba(255, 255, 255, 0.2) 50%,
+          rgba(255, 255, 255, 0.2) 75%,
+          transparent 75%,
+          transparent);
+    }
+
+    .car_ul::-webkit-scrollbar-track {
+      /*滚动条里面轨道*/
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+      background: #ededed;
+      border-radius: 10px;
+    }
+  }
+}
+
+.btn_box {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  grid-column-start: span 3;
+
+  button {
+    margin-left: 15px;
+  }
+}

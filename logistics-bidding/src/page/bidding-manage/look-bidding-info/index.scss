@@ -1,0 +1,41 @@
+.unlockInfo {
+  padding: 0px 20px 20px;
+
+  .unlockInfoBgTitle {
+    border: 1px solid #ccc;
+    background-color: #eeee;
+    padding: 20px;
+    display: flex;
+    color: #333;
+    margin-bottom: 20px;
+
+    p {
+      margin-bottom: 0;
+      width: 30%;
+      font-size: 18px;
+    }
+  }
+
+  :global {
+    .ant-row {
+      border: 1px solid #ccc;
+      border-right: 0;
+
+      .ant-col {
+        border-right: 1px solid #ccc;
+        padding: 15px 10px;
+        color: #999;
+      }
+    }
+  }
+
+  .unlockInfoSubTitle {
+    font-size: 18px;
+    margin: 20px 0
+  }
+
+  .eventBar {
+    padding: 20px;
+  }
+
+}

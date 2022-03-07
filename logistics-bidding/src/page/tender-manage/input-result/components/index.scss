@@ -1,0 +1,60 @@
+.inputResultItem {
+  margin-top: 40px;
+
+  .inputResultItemTitle {
+    color: #333;
+    font-size: 18px;
+  }
+
+  .inputResultItemSmallTitle {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+
+    >span {
+      font-weight: 700;
+      margin-right: 50px;
+    }
+  }
+}
+
+.priceModal {
+  .tableTitle {
+    font-size: 16px;
+    color: #333;
+    margin: 20px 0;
+  }
+
+  :global {
+    .ant-modal-body {
+      .ant-form {
+        margin: 0;
+        width: 100%;
+
+        .ant-form-item {
+          padding-bottom: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+.tableItem {
+  .tableTitle {
+    font-size: 16px;
+    color: #333;
+    margin: 20px 0;
+  }
+
+  :global {
+    .ant-form-item-label {
+      min-width: auto;
+      flex: inherit;
+    }
+
+    .ant-input {
+      width: 100px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.headerBlock {
+  position: relative;
+  height: 25vh;
+  background: url('@/assets/my_center_background.png') no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.headerBlock .userBlock {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+
+.headerBlock .avatarWrap {
+  margin: 0 auto 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: white;
+  overflow: hidden;
+}
+
+.headerBlock .avatar {
+  width: 100%;
+}
+
+:global(html:not([data-scale]) .am-button).loginBtn {
+  position: absolute;
+  bottom: 40px;
+  margin: auto;
+  width: 88px;
+  color: #3197FB;
+  margin-left: -44px;
+}

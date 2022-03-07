@@ -1,0 +1,52 @@
+
+.unlockInfo {
+  padding: 0px 20px 20px;
+
+  .unlockInfoTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    :global {
+      .ant-btn-primary {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .unlockInfoItem {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    >span {
+      margin-right: 50px;
+    }
+  }
+}
+
+.lookBiddingDetailItem {
+  .lookBiddingItemTitle {
+    color: #1890ff;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  :global {
+    .ant-row {
+      border: 1px solid #ccc;
+      border-right: 0;
+
+      .ant-col {
+        border-right: 1px solid #ccc;
+        padding: 15px 10px;
+        color: #999;
+      }
+    }
+  }
+  .unlockInfoSubTitle {
+    font-size: 18px;
+    margin: 20px 0
+  }
+}

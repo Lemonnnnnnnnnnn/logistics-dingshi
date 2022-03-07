@@ -1,0 +1,30 @@
+.carouselWrap {
+  width: 100%;
+  height: 33vh!important;
+  overflow: hidden;
+}
+
+.carouselWrap img {
+  width: 100%;
+  height: 33vh!important;
+}
+
+.featureWrap {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: -25px;
+  width: 90vw;
+  height: 90px;
+  background: #fff;
+  box-shadow: 0px 2px 10px 0px rgba(51,51,51,0.08);
+  border-radius: 8px;
+  border: 1px solid #fff;
+}
+
+.featureWrap img{
+  width: 32px;
+  height: 32px;
+}

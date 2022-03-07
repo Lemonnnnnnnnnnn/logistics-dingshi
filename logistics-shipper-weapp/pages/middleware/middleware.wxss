@@ -1,0 +1,26 @@
+/* pages/middleware/middleware.wxss */
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.font-blod {
+  font-weight: bold;
+  font-size: 18px;
+  color: #666;
+}
+
+.userinfo-avatar {
+  width: 114px;
+  height: 104px;
+  border-radius: 50%;
+}
+
+.usermotto {
+  margin-top: 80px;
+}
+
+.back-button {
+  color: #444;
+  margin-top: 20px;
+}

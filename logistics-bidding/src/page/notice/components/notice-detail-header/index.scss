@@ -1,0 +1,24 @@
+.noticeDetailHeaderLeft {
+  width: 750px;
+}
+.noticeDetailHeaderRight {
+  .noticeDetailHeaderShare {
+    text-align: right;
+    color: #14428A;
+
+    span {
+      font-size: 18px;
+
+      &:first-child {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+.noticeDetailItem {
+  display: flex;
+  // justify-content: space-between;
+  p {
+    flex: 1;
+  }
+}

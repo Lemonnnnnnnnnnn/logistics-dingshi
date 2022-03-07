@@ -1,0 +1,907 @@
+
+
+module.exports = {
+  /* ********认证中心******* */
+  AUTH_CENTER: '01', // 认证中心
+
+  OPERATION_AUTH: '0101', // 运营方认证
+
+  OPERATION_LIST_AUTH: '010101', // 浏览
+
+  CARGO_AUTH: '0102', // 货权方认证
+
+  CARGO_LIST_AUTH: '010201', // 浏览
+
+  CARGO_JUDGE: '010206', // 审核
+
+  CONSIGNMENT_AUTH: '0103', // 托运方认证
+
+  CONSIGNMENT_LIST_AUTH: '010301', // 浏览
+
+  CONSIGNMENT_JUDGE: '010306', // 审核
+
+  SHIPMENT_AUTH: '0104', // 承运方认证
+
+  SHIPMENT_LIST_AUTH: '010401', // 浏览
+
+  SHIPMENT_JUDGE: '010406', // 审核
+
+  DRIVER_AUTH: '0105', // 司机认证
+
+  DRIVER_LIST_AUTH: '010501', // 浏览
+
+  DRIVER_JUDGE: '010506', // 审核
+
+  CAR_AUTH: '0106', // 车辆认证
+
+  CAR_LIST_AUTH: '010601', // 浏览
+
+  CAR_MODIFY : '010603', // 修改
+
+  CAR_JUDGE: '010606', // 审核
+
+  ADD_BANK_ACCOUNT : '010508', // 添加银行卡
+
+  /* ***********用户管理************** */
+
+  USER: '02', // 用户设置
+
+  ROLE_SETTING: '0201', // 系统角色
+
+  ROLE_SETTING_VISIT:'020101', // 浏览
+
+  ROLE_SETTING_CREATE:'020102', // 创建
+
+  ROLE_SETTING_MODIFY:'020103', // 修改
+
+  USER_SETTING: '0202', // 用户管理
+
+  USER_SETTING_VISIT: '020201', // 浏览
+
+  USER_SETTING_CREATE: '020202', // 创建
+
+  USER_SETTING_MODIFY: '020203', // 修改
+
+  USER_SETTING_FORBID: '020204', // 禁用
+
+  USER_SETTING_ENABLE: '020205', // 启用
+
+  USER_SETTING_JUDGE: '020206', // 审核
+
+  USER_SETTING_DELETE: '020207', // 删除
+
+  USER_ADD_BANK_ACCOUNT : '020208', // 添加银行卡
+
+  GROUP_SETTING: '0203', // 群组设置
+
+
+  /* *********基础设置********* */
+
+  BASIC_SETTING:'03',
+
+  /* *********支付设置********* */
+
+  PAY_SETTING:'0309',
+
+  /* *********货权方管理********* */
+
+  CARGO_SETTING:'0301', // 货权方管理
+
+  CARGO_SETTING_VISIT:'030101', // 浏览
+
+  CARGO_SETTING_ADD:'030102', // 添加
+
+  CARGO_SETTING_DELETE:'030103', // 删除
+
+  /* ********承运方管理********* */
+
+  SHIPMENT_SETTING:'0302', // 承运方管理
+
+  SHIPMENT_SETTING_VISIT:'030201', // 浏览
+
+  SHIPMENT_SETTING_ADD:'030202', // 创建
+
+  SHIPMENT_SETTING_DELETE:'030203', // 删除
+
+  /* **********司机管理********* */
+
+  DRIVER_SETTING:'0303', // 司机管理
+
+  DRIVER_SETTING_VISIT:'030301', // 浏览
+
+  DRIVER_SETTING_CREATE:'030302',  // 创建
+
+  DRIVER_SETTING_DELETE:'030303', // 删除
+
+  /* **********车辆管理********* */
+
+  CAR_SETTING:'0304', // 车辆管理
+
+  CAR_SETTING_VISIT:'030401', // 浏览
+
+  CAR_SETTING_CREATE:'030402', // 创建
+
+  CAR_SETTING_DELETE:'030403', // 删除
+
+  /* ********常用货品管理******* */
+
+  GOODS_SETTING:'0305', // 常用货品管理
+
+  GOODS_SETTING_VISIT:'030501', // 浏览
+
+  GOODS_SETTING_CREATE:'030502', // 创建
+
+  GOODS_SETTING_MODIFY:'030503', // 修改
+
+  GOODS_SETTING_DELETE:'030504', // 删除
+
+  /* ********提货点管理********* */
+
+  DELIVERY_SETTING:'0306', // 提货点管理
+
+  DELIVERY_SETTING_VISIT:'030601', // 浏览
+
+  DELIVERY_SETTING_CREATE:'030602', // 创建
+
+  DELIVERY_SETTING_MODIFY:'030603', // 修改
+
+  DELIVERY_SETTING_DISABLE:'030604', // 禁用
+
+  DELIVERY_SETTING_ENABLE:'030605', // 启用
+
+  DELIVERY_SETTING_DELETE:'030606', // 删除
+
+  /* ********卸货点管理********* */
+
+  RECEIVING_SETTING:'0307', // 卸货点管理
+
+  RECEIVING_SETTING_VISIT : '030701', // 浏览
+
+  RECEIVING_SETTING_CREATE : '030702',  // 创建
+
+  RECEIVING_SETTING_MODIFY : '030703',  // 修改
+
+  RECEIVING_SETTING_DISABLE : '030704',  // 禁用
+
+  RECEIVING_SETTING_ENABLE : '030705',  // 启用
+
+  RECEIVING_SETTING_DELETE : '030706',  // 删除
+
+  /* ********货品类目管理******* */
+
+  CATEGORY_SETTING:'0308', // 货品类目管理
+
+  CATEGORY_SETTING_VISIT: '030801', // 浏览
+
+  CATEGORY_SETTING_CREATE: '030802', // 创建
+
+  CATEGORY_SETTING_MODIFY: '030803', // 修改
+
+  CATEGORY_SETTING_DELETE: '030804', // 删除
+
+  /* **********客户管理********* */
+
+  CUSTOMER_SETTING:'0310', // 客户管理
+
+  CUSTOMER_SETTING_VISIT:'031001', // 浏览
+
+  CUSTOMER_SETTING_ADD:'031002',  // 添加
+
+  CUSTOMER_SETTING_DELETE:'031003', // 删除
+
+  /* *********托运方管理******** */
+
+  CONSIGNMENT_SETTING:'0311', // 托运方管理
+
+  CONSIGNMENT_SETTING_VISIT:'031101', // 浏览
+
+  CONSIGNMENT_SETTING_ADD:'031102', // 添加
+
+  CONSIGNMENT_SETTING_DELETE:'031103', // 删除
+
+  /* *********银行账户设置******** */
+
+  BANK_SETTING: '0312', // 银行账户设置
+
+  BANK_SETTING_VISIT: '031201', // 浏览
+
+  BANK_SETTING_CREATE: '031202', // 创建
+
+  BANK_SETTING_MODIFY: '031203', // 修改
+
+  BANK_SETTING_DISABLE: '031204', // 禁用
+
+  BANK_SETTING_ENABLE: '031205', // 启用
+
+  /* *********业务类型配置******** */
+
+  BUSINESS_TYPE_SETTING:'0313', // 业务类型配置
+
+  BUSINESS_TYPE_SETTING_VISIT:'031301', // 浏览
+
+  BUSINESS_TYPE_SETTING_CREATE:'031302', // 创建
+
+  BUSINESS_TYPE_SETTING_MODIFY:'031303', // 修改
+
+  /* *********物流交易方案配置******** */
+
+  LOGISTICS_TYPE_SETTING:'0314', // 业务类型配置
+
+  LOGISTICS_TYPE_SETTING_VISIT:'031301', // 浏览
+
+  LOGISTICS_TYPE_SETTING_CREATE:'031302', // 创建
+
+  LOGISTICS_TYPE_SETTING_MODIFY:'031303', // 修改
+
+  LOGISTICS_TYPE_SETTING_DISABLE:'031304', // 禁用
+
+  LOGISTICS_TYPE_SETTING_ENABLE:'031305', // 启用
+
+  /* *********供应商管理******** */
+
+  SUPPLIER_MANAGE : '0315',
+
+  SUPPLIER_MANAGE_VISIT : '031501',
+
+  SUPPLIER_MANAGE_CREATE : '031502',
+
+  SUPPLIER_MANAGE_MODIFY : '031503',
+
+  SUPPLIER_MANAGE_ENABLE : '031504',
+
+  SUPPLIER_MANAGE_DISABLE : '031505',
+
+  /* *********业务中心******** */
+
+  BUINESS:'04', // 业务中心
+
+  PROJECT:'0401', // 项目管理
+
+  PROJECT_VISIT: '040101', // 浏览
+
+  PROJECT_CREATE: '040102', // 创建
+
+  PROJECT_MODIFY: '040103', // 修改
+
+  PROJECT_FORBID: '040104', // 禁用
+
+  PROJECT_ENABLE: '040105', // 启用
+
+  PROJECT_DELETE: '040106', // 删除
+
+  PROJECT_ASSIGN: '040107', // 指派
+
+  PROJECT_PLATFORM_REJECT: '040108', // 拒绝（平台）
+
+  PROJECT_ACCEPT: '040109', // 接受
+
+  PROJECT_SHIPMENT_REJECT: '040110', // 拒绝（承运方）
+
+  PROJECT_SHIPMENT_REASSIGN:'040111', // 重新指派（承运方）
+
+  /* **********预约单*********** */
+  PREBOOKING:'0402', // 预约单
+
+  PREBOOKING_VISIT: '040201', // 浏览
+
+  PREBOOKING_CREATE: '040202', // 创建
+
+  PREBOOKING_MODIFY: '040203', // 修改
+
+  PREBOOKING_DELETE: '040204', // 删除
+
+  PREBOOKING_CANCEL: '040205', // 取消
+
+  PREBOOKING_COMPLETE: '040206', // 完结
+
+  /* **********派车单*********** */
+
+  DISPATCH:'0403', // 派车单
+
+  DISPATCH_VISTI: '040301', // 浏览
+
+  DISPATCH_DISPATCHING: '040302', // 调度
+
+  DISPATCH_DELETE: '040303', // 删除
+
+  DISPATCH_REJECT: '040304', // 拒绝
+
+  /* **********运单************ */
+  TRANSPORT:'0404', // 运单
+
+  TRANSPORT_VISIT:'040401', // 浏览
+
+  TRANSPORT_MODIFY:'040402', // 修改
+
+  TRANSPORT_DELETE:'040403', // 删除
+
+  TRANSPORT_JUDGE_RECEIPT:'040404', // 审核回单
+
+  TRANSPORT_JUDGE_EXCEPTION:'040405', // 审核异常
+
+  TRANSPORT_CAR_TRAJECTORY:'040406', // 车辆轨迹
+
+  TRANSPORT_SHIPMENT_MODIFY_RECEIPT:'040407', // 修改回单（承运方）
+
+  TRANSPORT_EVENTS_EXPORT: '040417', // 导出运单事件
+
+  TRANSPORT_SUPPLEMENT_ORDER: '040418', // 运单补单
+
+  TRANSPORT_MODIFY_BILL :'040419',  // 修改单据
+
+  TRANSPORT_MODIFY_NUMBER : '040420', // 修改数量
+
+  TRANSPORT_MODIFY_UNLOAD_POINT : '040421', // 修改卸货点
+
+  TRANSPORT_SUPPLEMENT_TAG : '040422', // 补单标记
+
+  TRANSPORT_CANCEL : '040423', // 作废运单
+
+  /* ********要货计划单********** */
+
+  GOODSPLAN:'0405', // 要货计划单
+
+  GOODSPLAN_VISIT:'040501', // 浏览
+
+  GOODSPLAN_CREATE:'040502', // 创建
+
+  GOODSPLAN_MODIFY:'040503', // 修改
+
+  GOODSPLAN_AUDIT:'040504', // 审核
+
+  GOODSPLAN_CANCEL:'040505', // 取消
+
+
+  /* ***************交票清单*************** */
+
+  DELIVERY_LIST: '0406', // 交票清单
+
+  DELIVERY_LIST_BROWSE: '040601', // 浏览
+
+  DELIVERY_LIST_NEW: '040602', // 创建
+
+  DELIVERY_LIST_UPDATE: '040603', // 修改
+
+  DELIVERY_LIST_EXAMINE: '040604', // 审核
+
+  DELIVERY_LIST_SUBMIT: '040605', // 提交审核
+
+  DELIVERY_LIST_TRANSFER: '040606', // 转交
+
+  DELIVERY_LIST_PHOTO: '040607', // 拍照代签
+
+  DELIVERY_LIST_DELE: '040608', // 删除
+
+  DELIVERY_LIST_SIGN: '040609', // 签收
+
+  DELIVERY_LIST_PRINT: '040610', // 打印
+
+  DELIVERY_LIST_IMPORT: '040611', // 导出
+
+  /* **********承运对平台发起对账************ */
+
+  ACCOUNT : '05', // 对账权限
+
+  SHIPMENT_TO_PLAT_ACCOUNT: '0501', // 承运对平台发起对账
+
+  SHIPMENT_TO_PLAT_ACCOUNT_VISIT:'050101',  // 浏览
+
+  SHIPMENT_TO_PLAT_ACCOUNT_CREATE:'050102', // 创建
+
+  SHIPMENT_TO_PLAT_ACCOUNT_MODIFY:'050103', // 修改
+
+  SHIPMENT_TO_PLAT_ACCOUNT_CANCEL:'050104', // 作废
+
+  SHIPMENT_TO_PLAT_ACCOUNT_ADJUST_BILL:'050106', //  调账
+
+  SHIPMENT_TO_PLAT_ACCOUNT_PDF:'050107',  //  导出PDF
+
+  SHIPMENT_TO_PLAT_ACCOUNT_EXCEL:'050108',  //  导出EXCEL
+
+  SHIPMENT_TO_PLAT_ACCOUNT_TRANSPORT:'050109', // 导出运单明细
+
+  /* **********承运对托运发起对账************ */
+
+  SHIPMENT_TO_CONSIGNMENT_ACCOUNT: '0502', // 承运对托运发起对账
+
+  SHIPMENT_TO_CONSIGNMENT_ACCOUNT_VISIT:'050201',  // 浏览
+
+  SHIPMENT_TO_CONSIGNMENT_ACCOUNT_CREATE:'050202', // 创建
+
+  SHIPMENT_TO_CONSIGNMENT_ACCOUNT_MODIFY:'050203', // 修改
+
+  SHIPMENT_TO_CONSIGNMENT_ACCOUNT_CANCEL:'050204', // 作废
+
+  SHIPMENT_TO_CONSIGNMENT_ACCOUNT_ADJUST_BILL:'050206', //  调账
+
+  SHIPMENT_TO_CONSIGNMENT_ACCOUNT_PDF:'050207',  //  导出PDF
+
+  SHIPMENT_TO_CONSIGNMENT_ACCOUNT_EXCEL:'050208',  //  导出EXCEL
+
+  SHIPMENT_TO_CONSIGNMENT_ACCOUNT_TRANSPORT:'050209', // 导出运单明细
+
+  // /* **********平台对托运发起对账(隐藏)************ */
+  //
+  PLAT_TO_CONSIGNMENT_ACCOUNT: '0503', // 平台对托运发起对账
+
+  PLAT_TO_CONSIGNMENT_ACCOUNT_VISIT:'050301',  // 浏览
+
+  PLAT_TO_CONSIGNMENT_ACCOUNT_CREATE:'050302', // 创建
+
+  PLAT_TO_CONSIGNMENT_ACCOUNT_MODIFY:'050303', // 修改
+
+  PLAT_TO_CONSIGNMENT_ACCOUNT_CANCEL:'050304', // 作废
+
+  PLAT_TO_CONSIGNMENT_ACCOUNT_BILL:'050306', //  调账
+
+  PLAT_TO_CONSIGNMENT_ACCOUNT_PDF:'050307',  //  导出PDF
+
+  PLAT_TO_CONSIGNMENT_ACCOUNT_EXCEL:'050308',  //  导出EXCEL
+
+  PLAT_TO_CONSIGNMENT_ACCOUNT_TRANSPORT:'050309', // 导出运单明细
+
+  /* **********托运对货权发起对账************ */
+
+  CARGO_ACCOUNT: '0504', // 托运对货权发起对账
+
+  CARGO_ACCOUNT_VISIT:'050401',  // 浏览
+
+  CARGO_ACCOUNT_CREATE:'050402', // 创建
+
+  CARGO_ACCOUNT_MODIFY:'050403', // 修改
+
+  CARGO_ACCOUNT_CANCEL:'050404', // 作废
+
+  CARGO_ACCOUNT_BILL:'050406', //  调账
+
+  CARGO_ACCOUNT_PDF:'050407',  //  导出PDF
+
+  CARGO_ACCOUNT_EXCEL:'050408',  //  导出EXCEL
+
+  CARGO_ACCOUNT_TRANSPORT:'050409', // 导出运单明细
+
+  /* ************平台审核承运对账************ */
+
+  PLAT_AUDIT_SHIPMENT_ACCOUNT:'0505', // 平台审核承运对账
+
+  PLAT_AUDIT_SHIPMENT_ACCOUNT_VISIT:'050501', // 浏览
+
+  PLAT_AUDIT_SHIPMENT_ACCOUNT_EXCEL:'050502', // 导出Excel
+
+  PLAT_AUDIT_SHIPMENT_ACCOUNT_TRANSPORT:'050503', // 导出运单明细
+
+  PLAT_AUDIT_SHIPMENT_ACCOUNT_EXECUTE:'050504', // 审核
+
+  // /* ************托运审核平台对账 （隐藏） ************ */
+  //
+  CONSIGNMENT_AUDIT_PLAT_ACCOUNT:'0506', // 托运审核平台对账
+
+  CONSIGNMENT_AUDIT_PLAT_ACCOUNT_VISIT:'050601', // 浏览
+
+  CONSIGNMENT_AUDIT_PLAT_ACCOUNT_EXCEL:'050602', // 导出Excel
+
+  CONSIGNMENT_AUDIT_PLAT_ACCOUNT_TRANSPORT:'050603', // 导出运单明细
+
+  CONSIGNMENT_AUDIT_PLAT_ACCOUNT_EXECUTE:'050604', // 审核
+
+  /* ************托运审核承运对账************ */
+
+  CONSIGNMENT_AUDIT_SHIPMENT_ACCOUNT:'0507', // 托运审核承运对账
+
+  CONSIGNMENT_AUDIT_SHIPMENT_ACCOUNT_VISIT:'050701', // 浏览
+
+  CONSIGNMENT_AUDIT_SHIPMENT_ACCOUNT_EXCEL:'050702', // 导出Excel
+
+  CONSIGNMENT_AUDIT_SHIPMENT_ACCOUNT_TRANSPORT:'050703', // 导出运单明细
+
+  CONSIGNMENT_AUDIT_SHIPMENT_ACCOUNT_EXECUTE:'050704', // 审核
+
+  /* ************货权审核托运对账************ */
+
+  CARGO_TO_CONSIGNMENT_ACCOUNT:'0508', // 货权审核托运对账
+
+  CARGO_TO_CONSIGNMENT_ACCOUNT_VISIT:'050801', // 浏览
+
+  CARGO_TO_CONSIGNMENT_ACCOUNT_EXCEL:'050802', // 导出Excel
+
+  CARGO_TO_CONSIGNMENT_ACCOUNT_TRANSPORT:'050803', // 导出运单明细
+
+  CARGO_TO_CONSIGNMENT_ACCOUNT_AUDITE:'050804', // 审核
+
+  /* ***************付款单*************** */
+
+  PAY_BILL: '0509', // 付款单
+
+  PAY_BILL_VISIT: '050901', // 浏览
+
+  PAY_BILL_CREATE: '050902', // 创建
+
+  PAY_BILL_CANCEL: '050903', // 作废
+
+  PAY_BILL_PAY: '050904', // 支付
+
+  PAY_BILL_EXCEL: '050905', // 导出excel
+
+  PAY_BILL_EXPORT_DETAIL: '050906', // 导出明细
+
+  PAY_BILL_PAY_ORDER: '050907', // 查看支付凭证
+
+  /* ************承运审核下级承运对账(原承运审核平台对账)************ */
+
+  SHIPMENT_AUDIT_NEXT_SHIPMENT_ACCOUNT:'0510', // 托运审核承运对账
+
+  SHIPMENT_AUDIT_NEXT_SHIPMENT_ACCOUNT_VISIT:'051001', // 浏览
+
+  SHIPMENT_AUDIT_NEXT_SHIPMENT_ACCOUNT_EXCEL:'051002', // 导出Excel
+
+  SHIPMENT_AUDIT_NEXT_SHIPMENT_ACCOUNT_TRANSPORT:'051003', // 导出运单明细
+
+  SHIPMENT_AUDIT_NEXT_SHIPMENT_ACCOUNT_EXECUTE:'051004', // 审核
+
+  /* ************平台审核托运对账************ */
+
+  PLAT_AUDIT_CONSIGNMENT_ACCOUNT:'0511', // 平台审核托运对账
+
+  PLAT_AUDIT_CONSIGNMENT_ACCOUNT_VISIT:'051101', // 浏览
+
+  PLAT_AUDIT_CONSIGNMENT_ACCOUNT_EXCEL:'051102', // 导出Excel
+
+  PLAT_AUDIT_CONSIGNMENT_ACCOUNT_TRANSPORT:'051103', // 导出运单明细
+
+  PLAT_AUDIT_CONSIGNMENT_ACCOUNT_EXECUTE:'051104', // 审核
+
+  /* **********托运对平台发起对账************ */
+
+  CONSIGNMENT_TO_PLAT_ACCOUNT: '0512', // 托运对平台发起对账
+
+  CONSIGNMENT_TO_PLAT_ACCOUNT_VISIT:'051201',  // 浏览
+
+  CONSIGNMENT_TO_PLAT_ACCOUNT_CREATE:'051202', // 创建
+
+  CONSIGNMENT_TO_PLAT_ACCOUNT_MODIFY:'051203', // 修改
+
+  CONSIGNMENT_TO_PLAT_ACCOUNT_CANCEL:'051204', // 作废
+
+  CONSIGNMENT_TO_PLAT_ACCOUNT_ADJUST_BILL:'051206', //  调账
+
+  CONSIGNMENT_TO_PLAT_ACCOUNT_PDF:'051207',  //  导出PDF
+
+  CONSIGNMENT_TO_PLAT_ACCOUNT_EXCEL:'051208',  //  导出EXCEL
+
+  CONSIGNMENT_TO_PLAT_ACCOUNT_TRANSPORT:'051209', // 导出运单明细
+
+  /* **********平台对承运发起对账（隐藏）************ */
+
+  PLAT_TO_SHIPMENT_ACCOUNT: '0513', // 托运对平台发起对账
+
+  PLAT_TO_SHIPMENT_ACCOUNT_VISIT:'051301',  // 浏览
+
+  PLAT_TO_SHIPMENT_ACCOUNT_CREATE:'051302', // 创建
+
+  PLAT_TO_SHIPMENT_ACCOUNT_MODIFY:'051303', // 修改
+
+  PLAT_TO_SHIPMENT_ACCOUNT_CANCEL:'051304', // 作废
+
+  PLAT_TO_SHIPMENT_ACCOUNT_BILL:'051306', //  调账
+
+  PLAT_TO_SHIPMENT_ACCOUNT_PDF:'051307',  //  导出PDF
+
+  PLAT_TO_SHIPMENT_ACCOUNT_EXCEL:'051308',  //  导出EXCEL
+
+  PLAT_TO_SHIPMENT_ACCOUNT_TRANSPORT:'051309', // 导出运单明细
+
+
+  /* **********出库对账单************ */
+
+  OUTBOUND_ACCOUNT: '0514', // 托运对平台发起对账
+
+  CONSIGNMENT_OUTBOUND_ACCOUNT_VISIT:'051401',  // 浏览
+
+  SHIPMENT_OUTBOUND_ACCOUNT_VISIT:'051401',  // 浏览
+
+  OUTBOUND_ACCOUNT_CREATE:'051402', // 创建对账单
+
+  OUTBOUND_ACCOUNT_MODIFY:'051403', // 修改运单
+
+  OUTBOUND_ACCOUNT_RELATION:'051404', // 关联运单
+
+  OUTBOUND_ACCOUNT_EXCEL:'051405',  //  导出EXCEL
+
+  OUTBOUND_ACCOUNT_DELETE:'051406',  // 删除
+
+
+
+  /* ***************报表统计*************** */
+
+  STATISTCS_REPORT: '0701',
+
+  STATISTCS_REPORT_VISIT: '070101',
+
+  STATISTCS_REPORT_EXCEL: '070102',
+
+  DATA_ANALYSIS: '070103',
+
+  BUSINESS_BOARD: '0702',
+
+  BUSINESS_BOARD_BUSINESSDATA: '070201',
+
+  BUSINESS_BOARD_TRANSPORTDATA: '070202',
+
+  BUSINESS_BOARD_OPERATIONREVENUEDATA: '070203',
+
+  /* ***************物流开票*************** */
+  INVOICE_MANAGE: '08', // 开票管理
+
+  INVOICE: '0801', // 物流开票
+
+  INVOICE_VISIT: '080101', // 浏览
+
+  INVOICE_CREATE: '080102', // 创建
+
+  INVOICE_MODIFY: '080103', // 修改
+
+  INVOICE_CANCEL: '080104', // 作废
+
+  INVOICE_HANDEL: '080105', // 提交申请
+
+  // INVOICE_SENDED: '080106', // 已开出
+
+  INVOICE_EXPORT_DETAIL: '080107', // 导出明细
+
+  /* ***************审核承运开票*************** */
+
+  SHIPMENT_INVOICE: '0802', // 审核承运开票
+
+  SHIPMENT_INVOICE_VISIT: '080201', // 浏览
+
+  SHIPMENT_INVOICE_SENDED: '080202', // 已开出
+
+  SHIPMENT_INVOICE_EXPORT_DETAIL: '080203', // 导出明细
+
+  SHIPMENT_INVOICE_JUDGE: '080204', // 审核
+
+  SHIPMENT_INVOICE_MODIFY: '080205', // 修改
+
+  /* ***************审核托运开票*************** */
+
+  CONSIGNMENT_INVOICE: '0803', // 审核托运开票
+
+  CONSIGNMENT_INVOICE_VISIT: '080301', // 浏览
+
+  CONSIGNMENT_INVOICE_SENDED: '080302', // 已开出
+
+  CONSIGNMENT_INVOICE_EXPORT_DETAIL: '080303', // 导出明细
+
+  CONSIGNMENT_INVOICE_JUDGE: '080304', // 审核
+
+  CONSIGNMENT_INVOICE_MODIFY: '080305', // 修改
+
+  /* ***************资金管理*************** */
+
+  FUNDS: '09',
+
+  FUNDS_CUSTOMER: '0901', // 客户转账
+
+  FUNDS_CUSTOMER_VISIT: '090101', // 浏览
+
+  FUNDS_CUSTOMER_COMMIT: '090102', // 确认收款
+
+  FUNDS_INSIDETRANSFER: '0902', // 资金账户
+
+  FUNDS_INSIDETRANSFER_VISIT: '090201', // 浏览
+
+  FUNDS_INSIDETRANSFER_INTO_PROVISION: '090202', // 资金划转
+
+  FUNDS_INSIDETRANSFER_CHANGE_PHONE: '090204', // 修改授权人手机号
+
+  FUNDS_INSIDETRANSFER_RECHARGE: '090205', // 充值
+
+  FUNDS_INSIDETRANSFER_WITHDRAWAL: '090206', // 提现
+
+  FUNDS_TRANSFER_TO_BASIC_TAXPAYER: '090209', // 转出到纳税基本户
+
+  FUNDS_BUSINESS_DEALINGS: '0903', // 业务往来
+
+  FUNDS_BUSINESS_DEALINGS_VISIT: '090301', // 浏览
+
+  FUNDS_BUSINESS_DEALINGS_EXPORT_DETAIL: '090302', // 导出明细
+
+  FUNDS_BUSINESS_DEALINGS_REMARKS: '090303', // 添加备注
+
+  FUNDS_BUSINESS_DEALINGS_REPAY: '090304', // 重新支付
+
+  // FUNDS_PROVISION_FLOW: '0904', // 备付金流水明细
+
+  // FUNDS_PROVISION_FLOW_VISIT: '090401', // 浏览
+
+  // FUNDS_PROVISION_FLOW_EXPORT_DETAIL: '090402', // 导出明细
+
+  // FUNDS_PROVISION_FLOW_REMARKS: '090403', // 添加备注
+
+  // FUNDS_PROVISION_FLOW_REPAY: '090404', // 重新支付
+
+  FUNDS_MANAGE: '0905', // 资金管理
+
+  FUNDS_MANAGE_VISIT: '090501', // 浏览
+
+  FUNDS_MANAGE_MODIFY: '090502', // 修改
+
+  FUNDS_MANAGE_RECHARGE: '090503', // 充值
+
+  FUNDS_MANAGE_FUND_RECORD: '090504', // 收支记录
+
+  FUNDS_MANAGE_EXCEL: '090505', // 导出excel
+
+  FUNDS_MANAGE_APPLY_REFUND: '090506', // 申请退款
+
+  BANK_FLOWING: '0906', // 银行流水查询
+
+  BANK_FLOWING_VISIT: '090601', // 浏览
+
+  BANK_FLOWING_EXPORT_DETAIL: '090602', // 导出明细
+
+  PLAT_REFUND: '0907', // 平台退款
+
+  PLAT_REFUND_VISIT: '090701', // 浏览
+
+  PLAT_REFUND_JUDGE: '090702', // 审核
+
+  PLAT_REFUND_APPLY_AGAIN: '090703', // 重新退款
+
+  CUSTOMER_BALANCE: '0908', // 客户余额
+
+  CUSTOMER_BALANCE_VISIT: '090801', // 浏览
+
+  ACCOUNT_SEARCH: '0909', // 对账查询
+
+  ACCOUNT_SEARCH_VISIT: '090901', // 浏览
+
+  /* ***************未入账资金*************** */
+
+  UNRECORDED_FUNDS : '0910',
+
+  UNRECORDED_FUNDS_VISIT : '091001',
+
+  UNRECORDED_FUNDS_RECORD : '091002',
+
+  UNRECORDED_FUNDS_EXPORT : '091003',
+
+
+  /* ***************合同管理*************** */
+
+  CONTRACT_MANAGE: '11', // 合同管理
+
+  TRANSPORT_CONTRACT: '1101', // 运输合同
+
+  TRANSPORT_CONTRACT_VISIT: '110101', // 浏览
+
+  TRANSPORT_CONTRACT_CREATE: '110102', // 创建
+
+  TRANSPORT_CONTRACT_BIND: '110103', // 关联项目
+
+  TRANSPORT_CONTRACT_REHANDLE: '110104', // 重新提交
+
+  TRANSPORT_CONTRACT_UPLOAD: '110105', // 下载
+
+  TRANSPORT_CONTRACT_JUDGE: '110106', // 审核
+
+  /* ***************大屏*************** */
+
+  BIG_SCREEN_HEADER : '12',     // 大屏
+
+  BIG_SCREEN : '1201',        // 大屏
+
+  BIG_SCREEN_VISIT : '120101',   // 浏览
+
+  /* ***************设备管理*************** */
+
+  DEVICE_MANAGE : '13',    // 设备管理
+
+  /* ***************GPS设备管理*************** */
+
+  GPS_DEVICE_MANAGE : '1301', // GPS设备管理
+
+  GPS_DEVICE_MANAGE_VISIT : '130101',  // 浏览
+
+  GPS_DEVICE_MANAGE_CREATE : '130102',  // 创建  已隐藏
+
+  GPS_DEVICE_MANAGE_MODIFY : '130103',  // 修改  已隐藏
+
+  GPS_DEVICE_MANAGE_ENABLE : '130104', // 启用
+
+  GPS_DEVICE_MANAGE_DISABLE : '130105', // 禁用
+
+  GPS_DEVICE_MANAGE_EXPORT : '130106', // 导出
+
+  /* ***************设备租赁*************** */
+
+  DEVICE_RENT_MANAGE : '1302', // 设备租赁
+
+  DEVICE_RENT_MANAGE_VISIT : '130201', // 浏览
+
+  DEVICE_RENT_MANAGE_CREATE : '130202', // 创建  已隐藏
+
+  DEVICE_RENT_MANAGE_MODIFY : '130203', // 修改  已隐藏
+
+  DEVICE_RENT_MANAGE_AUDIT : '130204', // 审核  已隐藏
+
+  DEVICE_RENT_MANAGE_RETURN : '130205',  // 归还  已隐藏
+
+  DEVICE_RENT_MANAGE_RETURN_DEPOSIT : '130206',  // 归还押金  已隐藏
+
+  DEVICE_RENT_MANAGE_EXPORT : '130207',  // 导出
+
+  /* ***************GPS账号管理*************** */
+
+  GPS_ACCOUNT_MANAGE : '1303',  // GPS账号管理
+
+  GPS_ACCOUNT_MANAGE_VISIT : '130301',  // 浏览
+
+  GPS_ACCOUNT_MANAGE_CREATE : '130302',  // 创建
+
+  GPS_ACCOUNT_MANAGE_MODIFY : '130303',  // 修改
+
+  GPS_ACCOUNT_MANAGE_ENABLE : '130304',   // 启用  已隐藏
+
+  GPS_ACCOUNT_MANAGE_DISABLE : '130305',   // 禁用  已隐藏
+
+
+  /* ***************代扣代缴管理（明细）************** */
+
+  WITHHOLDING_MANAGE_LIST : '0804',  // 明细列表
+
+  WITHHOLDING_MANAGE_LOOK : '080401',  // 浏览
+
+  WITHHOLDING_MANAGE_EXPORT : '080402',  // 导出
+
+  /* ***************代扣代缴管理（月度汇总）************** */
+
+  WITHHOLDING_MANAGE_MONTH : '0805',  // 月度汇总列表
+
+  WITHHOLDING_MANAGE_MONTH_LOOK : '080501',  // 浏览
+
+  WITHHOLDING_MANAGE_MONTH_EXPORT : '080502',  // 导出
+
+  /* ***************代扣代缴人员管理************** */
+
+  WITHHOLDING_MANAGE_PERSONNEL : '0806',  // 月度汇总列表
+
+  WITHHOLDING_MANAGE_PERSONNEL_LOOK : '080601',  // 浏览
+
+  WITHHOLDING_MANAGE_PERSONNEL_NEW : '080602',  // 创建
+
+  WITHHOLDING_MANAGE_PERSONNEL_OPEN : '080603',  // 启用
+
+  WITHHOLDING_MANAGE_PERSONNEL_DISABLE : '080604',  // 禁用
+
+  WITHHOLDING_MANAGE_PERSONNEL_EXPORT : '080605',  // 导出
+
+  /* ***************税率配置************** */
+
+  TAX_RATE_CONFIG_LISt : '0807',  // 月度汇总列表
+
+  TAX_RATE_CONFIG_LOOK : '080701',  // 浏览
+
+  TAX_RATE_CONFIG_NEW : '080702',  // 创建
+
+  TAX_RATE_CONFIG_UPDATE : '080703',  // 修改
+
+
+  /* ***************承运项目************** */
+
+  CARRY_NEw : '040111',  // 重新指派
+
+  CARRY_LOOK : '040113',  // 查看配置
+
+  CARRY_UPDATE : '040114',  // 修改配置
+
+  
+  /* ***************招投标管理************** */
+  TENDER_BIDDER_MANAGE : '15',
+
+  TENDER_MANAGE : '1501',
+
+  TENDER_PLATFORM : '1502'
+
+};
+

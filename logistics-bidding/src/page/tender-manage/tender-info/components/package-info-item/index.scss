@@ -1,0 +1,43 @@
+.packageInfoItem {
+  padding: 20px 20px 20px 15px;
+
+  .packageInfoItemTitle {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .packageInfoItemDele {
+    color: #1890ff;
+    cursor: pointer;
+  }
+
+  .packageInfoItemSmallTitle {
+    font-size: 14px;
+    margin: 20px 0;
+  }
+
+  .packageInfoItemTable {
+    :global {
+      .ant-input {
+        width: 100%;
+      }
+    }
+  }
+
+  .packageInfoThTitle {
+    display: flex;
+
+    span {
+      margin-right: 20px;
+
+      &.packageInfoThBtn {
+        color: #1890ff;
+        border: 1px solid #1890ff;
+        border-radius: 4px;
+        padding: 0 5px;
+        margin-right: 0px;
+        cursor: pointer;
+      }
+    }
+  }
+}

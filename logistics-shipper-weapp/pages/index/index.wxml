@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="image-box">
+    <image class="user-login-image" src="/assets/loginCar.png"></image>
+  </view>
+  <view class="userinfo">
+    <button
+      disabled="{{disabled}}"
+      class="wx-login-button"
+      wx:if="{{!hasUserInfo && canIUse}}"
+      open-type="getPhoneNumber"
+      bindgetphonenumber="bindgetphonenumber"
+    >
+      微信用户一键登录
+    </button>
+    <button bindtap="appLogin" class="app-login-button">
+      手机号码登录/注册
+    </button>
+    
+    <checkbox-group class="checkbox" bindchange="checkRead">
+      <label class="checkbox">
+        <checkbox value="checked" />阅读并同意
+        <text class="user-agreement" catchtap="watchAgreement">《用户使用协议》</text>
+      </label>
+    </checkbox-group>
+  </view>
+</view>

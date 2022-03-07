@@ -1,0 +1,126 @@
+.container{
+  position: relative;
+  width: calc(100vw - 30px);
+  margin: 0 auto;
+  background-color: white;
+  padding: 15px 15px 0;
+  border-radius: 4px;
+  .line{
+    margin-top: 10px;
+    border-bottom: 1px solid rgba(248, 248, 248, 1);
+    width: 100%;
+  }
+  .line0{
+    margin-top: 3px;
+    border-bottom: 1px solid rgba(248, 248, 248, 1);
+    width: 100%;
+  }
+  .dateBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    span{
+      color: rgba(153, 153, 153, 1);
+      font-size: 14px;
+    }
+    span:nth-child(2){
+      font-weight: bold;
+    }
+  }
+  .dateBox_colorful{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    span:nth-child(1){
+      color: #555555;
+      font-size: 14px;
+    }
+    span:nth-child(2){
+      color: #222222;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+}
+
+:global .prebookingItem_detail_item_step_colorful{
+  .am-steps-item-title{
+    width: 75vw;
+    color: #222222;
+    font-size: 17px;
+    font-weight: bold;
+    word-break:keep-all;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis!important;
+  }
+  .am-steps-item-description{
+    width: 75vw;
+    color: #999999;
+    font-size: 14px;
+    word-break:keep-all;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+}
+
+:global .prebookingItem_detail_item_step_gray{
+  .am-steps-item-title{
+    width: 75vw;
+    color: rgba(153, 153, 153, 1);
+    font-size: 17px;
+    font-weight: bold;
+    word-break:keep-all;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis!important;
+  }
+  .am-steps-item-description{
+    width: 75vw;
+    color: rgba(153, 153, 153, 1);
+    font-size: 14px;
+    word-break:keep-all;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+}
+
+.circle_container{
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gray{
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: rgba(153, 153, 153, 1);
+}
+
+.green{
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #35D12F;
+}
+
+.yellow{
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #FFBF12;
+}
+
+.useCar{
+  display: block;
+  color: rgba(153, 153, 153, 1);
+  font-size: 14px;
+  margin-top: 10px;
+}

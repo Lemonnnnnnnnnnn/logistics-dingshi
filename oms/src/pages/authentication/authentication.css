@@ -1,0 +1,14 @@
+.formLabel {
+  margin: 0;
+  padding: 0 25px 8px;
+  line-height: 1.5;
+  white-space: initial;
+  text-align: left;
+  vertical-align: middle;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  font-weight: 700;
+}
+.formControl {
+  display: inline-block;
+}

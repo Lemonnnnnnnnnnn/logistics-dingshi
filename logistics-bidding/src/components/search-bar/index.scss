@@ -1,0 +1,107 @@
+.searchBox {
+  border: 1px solid #ccc;
+  // padding: 12px;
+
+
+  .searchItem {
+    display: flex;
+    min-height: 60px;
+    line-height: 60px;
+    padding: 0 12px;
+    transition: all 0.5s;
+    border-bottom: 1px dashed #ccc;
+    overflow: hidden;
+
+    &.last{
+      border-bottom: 0;
+    }
+
+    >span {
+      margin-right: 15px;
+      width: 70px;
+      color: #999;
+    }
+
+  }
+}
+
+.searchRow {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+
+  .searchRowMore {
+    width: 50px;
+    cursor: pointer;
+    color: #1E62BD;
+  }
+
+  .searchLabel {
+    display: flex;
+    flex-wrap: wrap;
+    flex:  1;
+
+    >span {
+      //width: 70px;
+      margin-right: 40px;
+      color: #333;
+      cursor: pointer;
+
+      &.active {
+        color: #1E62BD;
+      }
+    }
+  }
+}
+.searchMenus {
+  border: 1px solid #ccc;
+  padding: 0 12px;
+  min-height: 60px;
+  line-height: 60px;
+  margin-bottom: 10px;
+  display: flex;
+
+  .clearAll{
+    color: #1E62BD;
+    cursor: pointer;
+    width: 70px;
+  }
+
+  >span {
+    margin-right: 15px;
+    width: 90px;
+    color: #999;
+  }
+  .searchRow {
+    >span {
+      border: 1px solid #ccc;
+      padding: 5px;
+      margin-right: 15px;
+    }
+    >.searchLabel {
+      display: flex;
+      align-items: center;
+      flex: 1;
+    }
+
+    .searchMenu {
+      border: 1px solid #ccc;
+      display: flex;
+      margin-right: 15px;
+      align-items: center;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 5px;
+
+      :global {
+        .anticon {
+          >svg {
+            color: #999;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+

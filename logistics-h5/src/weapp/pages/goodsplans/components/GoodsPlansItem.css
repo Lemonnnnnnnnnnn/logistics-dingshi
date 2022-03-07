@@ -1,0 +1,36 @@
+.card{
+  padding: 5px 0 17px 0;
+}
+
+.goodsPlansName{
+  font-size: 16px;
+  font-weight:550;
+  color:rgba(51,51,51,1);
+  line-height:16px;
+  margin-bottom: 12px;
+}
+
+.contractName{
+  height:14px;
+  font-size:14px;
+  color:rgba(102,102,102,1);
+  line-height:14px;
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow:hidden;
+  max-width: 100px
+}
+
+.createUserName{
+  height:14px;
+  font-size:14px;
+  line-height:14px;
+  display: inline-block;
+  float: right;
+  color: orange;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow:hidden;
+  width:110px
+}

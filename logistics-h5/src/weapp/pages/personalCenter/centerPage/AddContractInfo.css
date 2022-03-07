@@ -1,0 +1,21 @@
+.addBtn{
+  position: absolute!important;
+  display: inline-block;
+  width: 50%;
+  height: 44px;
+  left: 0;
+  bottom: 0;
+  border: none;
+  border-radius: 0px;
+}
+
+.confirmBtn{
+  position: absolute!important;
+  display: inline-block;
+  width: 50%;
+  height: 44px;
+  right: 0;
+  bottom: 0;
+  border: none;
+  border-radius: 0px;
+}

@@ -1,0 +1,15 @@
+.emptyWrap{
+  padding: 20px 0;
+  text-align: center;
+}
+
+.emptyWrap img{
+  width: 106px;
+  margin-bottom: 15px;
+}
+
+
+.emptyWrap .description{
+  font-size: 12px;
+  color: #888;
+}

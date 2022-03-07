@@ -1,0 +1,27 @@
+.smsBox {
+  padding-left: 50px;
+
+  p {
+    color: #333;
+
+    span {
+      color: #555;
+      margin-left: 40px;
+    }
+  }
+
+  .smsInput {
+    display: flex;
+  }
+
+  :global {
+    .ant-input {
+      width: 300px;
+
+    }
+
+    .ant-btn {
+      margin-left: 30px;
+    }
+  }
+}

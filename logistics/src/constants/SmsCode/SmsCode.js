@@ -1,0 +1,11 @@
+const SMSCODE_TYPE = {
+  DEFAULT :'SMS_116565856', // 默认模板
+  CHANGE_PHONE: 'SMS_190282273', // 修改授权支付人手机
+  PAY_ORDER: 'SMS_189621738', // 支付订单验证码
+  APPREF: 'SMS_206539418', // 退款
+  WITHDRAWAL: 'SMS_208641206', // 收入提现
+  FORGET_PASSWORD: 'SMS_152852310', // 忘记密码
+  BIND_BANK_ACCOUNT : 'SMS_215800954', // 平台绑定司机银行卡
+}
+
+export default SMSCODE_TYPE

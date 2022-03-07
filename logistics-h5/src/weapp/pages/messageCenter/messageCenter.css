@@ -1,0 +1,62 @@
+.noticeBar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  color: #9B9B9B;
+}
+
+.noticeBar .readAll{
+  color: #3197FB;
+}
+
+.messageList{
+  position: absolute;
+  top: 36px;
+  padding-top: 10px;
+  height: calc(100% - 300px);
+  width: 100%;
+}
+
+.messageTime {
+  display: inline-block;
+  padding: 2px 11px;
+  border-radius: 11px;
+  background: #E0E0E6;
+  color: #fff;
+  font-size: 11px;
+}
+
+.messageTitle{
+  color: #000;
+  font-size: 17px;
+}
+
+.messageTitle.unRead{
+  font-weight: bold;
+}
+
+.messageContent{
+  padding-top: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+:global(html:not([data-scale]) .am-card-body)::before{
+  display: none;
+}
+
+.messageFooter{
+  padding-top: 10px;
+  margin: 0 15px;
+  border-top: 1px solid #F2F4F7;
+}
+
+.messageFooter .toDetail{
+  margin-left: -15px;
+}
+
+.messageFooter .detailIcon{
+  margin-right: -15px;
+}

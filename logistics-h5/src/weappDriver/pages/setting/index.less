@@ -1,0 +1,77 @@
+.setting-list{
+  :global .setting-list-item{
+    position: relative;
+    display: flex;
+    padding-left: 15px;
+    min-height: 44px;
+    background-color: #fff;
+    vertical-align: middle;
+    overflow: hidden;
+    transition: background-color 200ms;
+    align-items: center;
+    .setting-list-line{
+      position: relative;
+      display: flex;
+      flex: 1 1;
+      align-items: center;
+      align-self: stretch;
+      padding-right: 15px;
+      overflow: hidden;
+      .setting-list-content{
+        flex: 1 1;
+        color: #555555;
+        font-size: 17px;
+        line-height: 1.5;
+        text-align: left;
+        width: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-top: 7px;
+        padding-bottom: 7px;
+      }
+      .setting-list-arrow{
+        display: block;
+        width: 15px;
+        height: 15px;
+        margin-left: 8px;
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2216%22%20height%3D%2226%22%20viewBox%3D%220%200%2016%2026%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cg%20id%3D%22UI-KIT_%E5%9F%BA%E7%A1%80%E5%85%83%E4%BB%B6%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20id%3D%229.9%E5%9F%BA%E7%A1%80%E5%85%83%E4%BB%B6%22%20transform%3D%22translate(-5809.000000%2C%20-8482.000000)%22%20fill%3D%22%23C7C7CC%22%3E%3Cpolygon%20id%3D%22Disclosure-Indicator%22%20points%3D%225811%208482%205809%208484%205820.5%208495%205809%208506%205811%208508%205825%208495%22%3E%3C%2Fpolygon%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        visibility: hidden;
+      }
+      .setting-list-arrow-horizontal{
+        visibility: visible;
+      }
+    }
+    .setting-list-line::after {
+      content: '';
+      position: absolute;
+      background-color: #ddd;
+      display: block;
+      z-index: 1;
+      top: auto;
+      right: auto;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1PX;
+      transform-origin: 50% 100%;
+      transform: scaleY(0.5);
+    }
+    .setting-list-ripple{
+      position: absolute;
+      background: transparent;
+      display: inline-block;
+      overflow: hidden;
+      will-change: box-shadow, transform;
+      transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      outline: none;
+      cursor: pointer;
+      border-radius: 100%;
+      transform: scale(0);
+    }
+  }
+
+}

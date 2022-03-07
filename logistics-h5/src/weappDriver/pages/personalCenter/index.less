@@ -1,0 +1,193 @@
+.personalBox{
+  background-color: #FFFFFFFF;
+  margin-bottom: 15px;
+  p{
+    margin: 0;
+    padding: 0;
+  }
+  width: 100%;
+  height: 187px;
+  border-bottom: 0.5px solid #0000001A;
+  .personalDiv{
+    width: 100%;
+    height: 187px;
+    margin: 0 auto;
+    padding: 20px 15px;
+    .avatarContainer{
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      margin-right: 15px;
+      margin-bottom: 34px;
+    }
+    .avatar{
+      border-radius: 24px;
+      width: 48px;
+      height: 48px;
+    }
+    .userContainer{
+      display: inline-block;
+      vertical-align: top;
+      height: 55px;
+      .nickName{
+        font-weight: bold;
+        font-size: 17px;
+      }
+      .edit_icon{
+        background-image: url("@/assets/driver/edit.png");
+        display: inline-block;
+        vertical-align: bottom;
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+      }
+      .identify_green{
+        background-color: rgba(53, 209, 47, 0.05);
+        border-radius: 4px;
+        padding: 0 5px;
+        display: flex;
+        align-items: center;
+        height: 24px;
+        margin-right: 5px;
+        span{
+          color: rgba(53, 209, 47, 1);
+          display: block;
+          border-radius: 4px;
+          font-weight: 500;
+          font-size: 12px;
+          padding: 3px;
+        }
+      }
+      .identify_gray{
+        background-color: #F2F2F2;
+        border-radius: 4px;
+        padding: 0 5px;
+        display: flex;
+        align-items: center;
+        height: 24px;
+        margin-right: 5px;
+        span{
+          color: #aaa;
+          display: block;
+          border-radius: 4px;
+          font-weight: 500;
+          font-size: 12px;
+          padding: 3px;
+        }
+      }
+    }
+  }
+  :global .driver_weapp_personalCenter_business{
+    .business-item{
+      margin-left: 0;
+    }
+    .service-text{
+      margin-top: 5px;
+    }
+    .business-item-inner-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    img{
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.service{
+  padding: 15px 0 20px;
+  width: calc(100vw - 30px);
+  margin: 0 auto;
+  background-color: #FFFFFFFF;
+  border-radius: 4px;
+  h3{
+    color: #222222FF;
+    font-size: 20px;
+    padding-left: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  :global .driver_weapp_personalCenter_service{
+    .service-item{
+      margin-left: 0;
+    }
+    .service-text{
+      margin-top: 5px;
+    }
+    .service-item-inner-content{
+      padding: 10px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    img{
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.status_container{
+  display: flex;
+  align-items: center;
+}
+
+.abc{
+  background-color: rgba(255, 191, 18, 1);
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+.tips{
+  color: rgba(255, 255, 255, 1);
+  text-decoration: underline;
+  margin-left: 3px;
+}
+
+:global .personalCenter_item_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .am-badge-text{
+    background-color: rgba(245, 64, 64, 1);
+    top: 0;
+    right: -40px;
+  }
+  .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span{
+      margin-top: 5px;
+    }
+  }
+}
+
+
+.block{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  margin: 10px auto;
+  padding: 10px;
+  box-sizing: border-box;
+  div{
+    margin-left: 10px;
+  }
+}
+
+
+
+.head{
+  position: relative;
+  width: 100%;
+  img{
+    width: 100%;
+  }
+}

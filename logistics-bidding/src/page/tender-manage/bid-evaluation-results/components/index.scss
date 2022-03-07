@@ -1,0 +1,33 @@
+.bidResultItem {
+  padding: 0px 20px;
+
+  .bidResultItemTitle {
+    margin: 20px 0;
+    font-size: 18px;
+  }
+
+  .bidResultItemSub {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 186x;
+  }
+
+  .bidResultItemSmallTitle {
+    display: flex;
+    margin-bottom: 20px;
+
+    span {
+      margin-right: 20px;
+
+      &:first-child {
+        font-weight: 700;
+      }
+    }
+
+    :global {
+      .ant-checkbox-wrapper {
+        margin-left: 20px;
+      }
+    }
+  }
+}

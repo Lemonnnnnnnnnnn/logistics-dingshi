@@ -1,0 +1,23 @@
+.description{
+  padding: 0 15px;
+  font-weight: bold;
+}
+
+.registry-wrap{
+  position: relative;
+  background: #fff;
+  height: 100vh;
+  padding: 30px 5px 0;
+}
+
+.toLogin{
+  margin: 10px 15px 0;
+}
+
+.registerTip{
+  position: fixed;
+  top: 610px;
+  left: 0;
+  right: 0;
+  font-size: 13px;
+}

@@ -1,0 +1,36 @@
+.rejectBtn{
+  width: 50%;
+  display: inline-block;
+  border-radius: 0px !important;
+  color: black;
+  background: white;
+  height: 50px;
+  line-height: 50px;
+  z-index: 100;
+  position: absolute !important;
+  left:0;
+  bottom:0
+}
+
+.confirmBtn{
+  width: 50%;
+  display: inline-block;
+  border-radius: 0;
+  color: white;
+  background: rgba(49,151,251,1);
+  height: 50px;
+  line-height: 50px;
+  border-radius: 0px !important;
+  z-index: 100;
+  position: absolute !important;
+  right:0;
+  bottom:0
+}
+
+.goBackBtn{
+  width: 85%;
+  margin: 20px auto;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 22px;
+}

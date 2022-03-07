@@ -1,0 +1,107 @@
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .header {
+    flex-shrink: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .logo {
+      margin-left: 15px;
+      width: 34px;
+      height: 34px;
+      flex: 0 0 auto;
+    }
+    .projectLabel {
+      color: #6e98fc;
+      font-size: 14px;
+      margin-left: 40px;
+      flex: 0 0 auto;
+      margin-right: 15px;
+    }
+    .projectSelector {
+      flex: 1 1 auto;
+      margin-right: 10px;
+      overflow: hidden;
+      :global .ant-select-selector {
+        border-color: rgba(0, 102, 153, 1);
+        background-color: rgba(0, 102, 153, 0.498039215686275);
+        .ant-select-selection-item {
+          color: #6e98fc;
+        }
+      }
+    }
+  }
+  .content {
+    border-radius: 10px;
+    flex: auto;
+    border: 1px solid rgba(0, 102, 153, 1);
+    .prebookTitle {
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+    }
+    .prebookList {
+      height: calc(100% - 150px);
+      padding: 5px;
+      overflow: auto;
+      .prebookItem {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(0, 102, 153, 1);
+        padding: 3px 0;
+        color: #b6d7ff;
+        cursor: pointer;
+        .prebookNo {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 40%;
+          padding: 3px;
+        }
+        & > ul {
+          width: 30%;
+          padding: 3px;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+          overflow: hidden;
+          & > li {
+            & > img {
+              height: 23px;
+              width: 23px;
+            }
+            & > div {
+              margin-left: 3px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+            margin-top: 5px;
+            display: flex;
+          }
+        }
+      }
+    }
+    .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+    }
+  }
+}
+
+.selectorDropdown {
+  background-color: rgba(0, 102, 153, 1);
+  color: rgb(182, 215, 255);
+  :global .ant-select-item-option-active {
+    background-color: rgb(0, 51, 153);
+  }
+  :global .ant-select-item-option-selected {
+    background-color: rgb(0, 51, 153);
+  }
+}

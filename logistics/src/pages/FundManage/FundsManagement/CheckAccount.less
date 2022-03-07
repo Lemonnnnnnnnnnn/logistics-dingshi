@@ -1,0 +1,86 @@
+.head_container{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  &>div{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 24px;
+    h3{
+      font-weight: 650;
+      font-style: normal;
+      font-size: 22px;
+    }
+  }
+}
+
+.type{
+  width: 100%;
+  margin: 15px 0;
+  :global .ant-radio-group{
+    width: 100%;
+    display: flex;
+  }
+  :global .ant-radio-button-wrapper{
+    flex: 1;
+    text-align: center;
+  }
+}
+
+.title{
+  display: block;
+  padding: 0 20px;
+}
+
+.red{
+  color: #D9001B;
+}
+
+.green{
+  color: green;
+}
+
+.division{
+  width: calc(100% + 48px);
+  background-color: rgb(242, 242, 242);
+  margin-left: -24px;
+  height: 25px;
+}
+
+.tips_box{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.tag_tips{
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.65);
+  padding: 5px 30px;
+  margin-left: 10px;
+  width: 100%;
+  .sep_block{
+    display: inline-block;
+    width: 60px;
+  }
+  .red_icon{
+    color: #D9001B;
+    font-size: 17px;
+    margin-right: 5px;
+  }
+  .green_icon{
+    color: green;
+    font-size: 17px;
+    margin-right: 5px;
+  }
+}
+
+.title_div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

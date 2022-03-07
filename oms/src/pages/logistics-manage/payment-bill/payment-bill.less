@@ -1,0 +1,160 @@
+:global .PaymentForm_select{
+  .ant-select{
+    width: 200px!important;
+  }
+}
+
+:global .PaymentForm_order_create_time{
+  width: 400px!important;
+  .ant-form-item-label{
+    width: 120px!important;
+  }
+  .ant-form-item-control-wrapper{
+    width: 250px!important;
+  }
+  .ant-calendar-picker-input{
+    width: 250px!important;
+  }
+}
+
+:global .PaymentBill_reject_form{
+  .ant-input{
+    width: 100%;
+  }
+}
+
+:global .paymentBill_tag_tips{
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.65);
+  padding: 5px;
+  margin: 10px 0 5px;
+  span{
+    color: #078FEA;
+  }
+}
+
+:global .paymentBill_info_icon_color{
+  color: #078FEA;
+  margin: 0 5px;
+  font-size: 16px;
+}
+
+:global .paymentBill_tag_red_color{
+  color: red!important;
+}
+
+.button_box{
+  border-top: 1px solid #e8e8e8;
+  padding-top: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.redMoney{
+  color: rgb(217, 0, 27);;
+  font-size: 18px;
+  padding-left: 30px;
+  font-weight: 650;
+}
+
+.totalDiv{
+  width: 100%;
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  .cardDiv:nth-child(1) {
+    left: 25px;
+    animation: moveIn 0.5s 1 0.15s normal forwards;
+  }
+  .cardDiv:nth-child(2) {
+    left: calc(33% + 25px);
+    animation: moveIn 0.5s 1 0.35s normal forwards;
+  }
+  .cardDiv:nth-child(3) {
+    left: calc(66% + 25px);
+    animation: moveIn 0.5s 1 0.55s normal forwards;
+  }
+  .cardDiv{
+    width: 32%;
+    border-radius: 4px;
+    height: 124px;
+    box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.04);
+    opacity: 0;
+    position: absolute;
+    div:nth-child(1) {
+      p{
+        margin-bottom: 3px;
+        text-align: center;
+      }
+      .number {
+        font-weight: 650;
+        font-style: normal;
+        font-size: 17px;
+        margin-top: 15px;
+        color: #333333;
+      }
+      .des {
+        font-weight: 400;
+        font-style: normal;
+        color: #999999;
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+      .description{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(249, 249, 249);
+        align-items: center;
+        .bar2{
+          color: #dddbdb;
+          font-size: 20px;
+        }
+        span{
+          padding-left: 15px;
+          line-height: 45px;
+          text-align: left;
+          flex: 1 0;
+          font-weight: 400;
+          font-style: normal;
+          color: #999999;
+        };
+        .money{
+          font-weight: 500;
+          font-style: normal;
+          color: #333333;
+          padding-left: 10px;
+        }
+      }
+    }
+    .eye{
+      position: absolute;
+      top: 8px;
+      right: 10px;
+      cursor: pointer;
+    }
+    .bar{
+      position: absolute;
+      top: 19px;
+      right: 12px;
+      transform:skewY(-45deg);
+      cursor: pointer;
+    }
+  }
+}
+
+@keyframes moveIn {
+  0% {
+    opacity: 0;
+    transform: translate(600px, 0);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-100px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}

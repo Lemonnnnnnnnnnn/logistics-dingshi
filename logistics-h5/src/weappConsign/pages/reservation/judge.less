@@ -1,0 +1,67 @@
+.userInfo_box{
+  height: 88px;
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  background-color: white;
+  .info_box{
+    display: flex;
+    div{
+      p{
+        margin: -3px 0 0;
+        padding: 0;
+      }
+      p:nth-child(1){
+        color: rgba(34, 34, 34, 1);
+        font-size: 17px;
+        margin-bottom: 5px;
+      }
+      p:nth-child(2){
+        color: rgba(153, 153, 153, 1);
+        font-size: 14px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        span:nth-child(2){
+          display: block;
+          margin: 0 10px;
+          height: 10px;
+          width: 1px;
+          border-right: 1px solid rgba(153, 153, 153, 1);
+        }
+      }
+    }
+    img{
+      height: 44px;
+      width: 44px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+  }
+  img{
+    height: 44px;
+    width: 44px;
+
+  }
+}
+
+:global(.am-list-item .am-input-control){
+  font-size: 15px;
+}
+
+:global(.am-button){
+  overflow: visible;
+}
+
+:global(.fake-input){
+  font-weight: bold;
+  font-size: 20px !important;
+}
+
+:global(.am-list-item .am-input-label.am-input-label-5){
+  font-size: 15px !important;
+}
+

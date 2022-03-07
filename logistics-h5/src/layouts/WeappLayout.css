@@ -1,0 +1,27 @@
+.tabBar{
+  text-align: center;
+  background: #f3f3f3;
+  border-top: 1px solid #ddd;
+}
+
+.tabBarItem{
+  display: inline-block;
+  width: 25%;
+  padding: 5px 0;
+  color: #999;
+}
+
+.tabBarItem.active{
+  color: #108ee9;
+}
+
+.tabBarIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.am-tab-bar-bar::after{
+  content: '';
+  height: '20px';
+  color:white;
+}

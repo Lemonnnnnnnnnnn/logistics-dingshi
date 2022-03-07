@@ -1,0 +1,28 @@
+.password {
+  width: 120px;
+
+  :global {
+    .ant-input {
+      padding: 0;
+      border: 0;
+      background-color: transparent;
+
+      &:hover, &:focus {
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+      }
+    }
+  }
+
+}
+.modalConfirm {
+  display: flex;
+  margin-top: 25px;
+  align-items: center;
+
+  >span {
+    width: 100px;
+    display: inline-block;
+  }
+}

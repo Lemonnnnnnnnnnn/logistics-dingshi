@@ -1,0 +1,18 @@
+.sortBar {
+  border: 1px solid #ccc;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  margin: 20px 0;
+
+  >span {
+    margin-right: 15px;
+    width: 70px;
+    color: #999;
+    cursor: pointer;
+
+    &.active {
+      color: #14428A;
+    }
+  }
+}

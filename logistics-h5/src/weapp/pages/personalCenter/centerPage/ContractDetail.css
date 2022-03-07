@@ -1,0 +1,21 @@
+.layout :global(.am-list-item .am-list-line) {
+  overflow: visible;
+}
+
+.layout :global(.am-list-item:not(:last-child) .am-list-line::after) {
+  width: calc(100% + 15px) !important;
+  margin-left: -15px; 
+  /* height: 7px !important; */
+}
+
+.layout :global(.am-card.am-card-full::before) {
+  display: none !important;
+}
+
+.layout :global(.am-list-item .am-input-label){
+  color: #333 !important;
+}
+
+.layout :global(.am-flexbox-align-center){
+  flex-direction: row-reverse;
+}

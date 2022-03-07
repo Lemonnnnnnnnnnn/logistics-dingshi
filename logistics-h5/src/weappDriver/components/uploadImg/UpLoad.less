@@ -1,0 +1,132 @@
+.upload{
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: top;
+    padding-top: 10px;
+    /* z-index: 10000; */
+}
+
+.img-preview-wrap{
+  display: inline-block;
+  position: relative;
+  vertical-align: text-bottom;
+  //margin: 10px 0
+  margin: 10px 0 30px 2.5vw;
+}
+
+.img-preview-wrap.upload{
+  width: 30vw;
+  height: 30vw;
+  text-align: center;
+  font-size: 30px;
+  border:1px solid rgba(229,229,229,1);
+  border-radius: 4px;
+}
+
+.img-preview-wrap .img-preview-operations{
+  margin: 0;
+  padding: 5px 0;
+  position: absolute;
+  background: #fafafa;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all .25s;
+  border-radius: 4px;
+  color: rgba(0, 0, 0, .65);
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-preview-wrap .img-preview-operations>li{
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+}
+
+.img-preview-wrap.upload .img-preview-operations{
+  transform: translateY(0);
+  opacity: 0.8;
+  padding: 0;
+  top: 0;
+}
+/*
+.img-preview-popUpVideo:hover .img-preview-operations{
+  transform: translateY(0);
+  opacity: 1;
+} */
+.img-preview-wrap.upload .img-preview-operations .img-preview-label {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  padding: 0 10px;
+  line-height: 20px;
+  overflow: hidden;
+  height: 42px;
+}
+.remove-file{
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 0;
+  width: 2em;
+  height: 2em;;
+  transform: scale(1);
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  cursor: pointer;
+  transition: all .25s ease-out;
+}
+
+.remove-file:hover{
+  color: #666;
+  transform: scale(1.2);
+}
+
+.image_container{
+  width: 225px;
+  height: 125px;
+  margin: 0 auto;
+  border: 1px dashed rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.hasBackImg{
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: none;
+}
+
+.camera_icon{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+  p{
+    margin: 5px 0 0;
+    color: rgba(85, 85, 85, 1);
+    font-size: 14px;
+  }
+}
+
+.add_button {
+  width: 256px;
+  margin:0 0 10px 0;
+  height: 47px;
+  background:rgba(46,122,245,1);
+  border-radius:4px;
+  font-size:17px;
+  color:rgba(255,255,255,1);
+}

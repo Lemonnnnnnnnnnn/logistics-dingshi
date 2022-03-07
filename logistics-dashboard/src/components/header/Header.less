@@ -1,0 +1,297 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  //padding-top: 1.4rem;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    height: 3.5rem;
+    border-radius: 0.8rem;
+    border: 1px solid rgba(0, 102, 153, 1);
+    position: relative;
+    display: flex;
+    align-items: center;
+    //padding-left: 1rem;
+    margin-top: 0.7rem;
+    z-index: 1000;
+    .centerSelect {
+      width: 12.5rem;
+      :global .ant-select-selector {
+        border-color: rgba(0, 102, 153, 1);
+        background-color: rgba(0, 102, 153, 0.498039215686275);
+        .ant-select-selection-item {
+          color: #6e98fc;
+        }
+      }
+      :global(.ant-select-arrow) {
+        color: #6e98fc;
+      }
+    }
+  }
+
+  .text {
+    font-family: 'PingFangSC-Regular', 'PingFang SC', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: #b6d7ff;
+    line-height: 1.2rem;
+    cursor: pointer;
+    //margin: 0 1rem;
+  }
+
+  .searchCar {
+    //margin-left: 2.9rem;
+    font-family: 'PingFangSC-Regular', 'PingFang SC', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8rem;
+    color: rgba(182, 215, 255, 0.65);
+    margin-right: 0.5rem;
+  }
+
+  .bottom_icon {
+    //margin-right: 0.5rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    transition: all 0.3s;
+  }
+
+  .active_icon {
+    transform: rotate(180deg);
+  }
+
+  .carContainer::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+  }
+
+  .carContainer {
+    min-width: 80rem;
+    position: absolute;
+    overflow-y: auto;
+    top: -100vh;
+    right: 1px;
+    width: 58%;
+    height: calc(100vh - 5rem);
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 10;
+    background-color: rgba(15, 30, 75, 0.749019607843137);
+    //padding-top: 1rem;
+  }
+
+  .active {
+    top: 3.5rem;
+    opacity: 1;
+  }
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //padding-top: 2.1rem;
+
+  p {
+    display: block;
+    width: 100%;
+    text-align: center;
+    //margin-bottom: 0.8rem;
+  }
+}
+
+:global .car_search {
+  width: 14.2rem !important;
+  height: 1.9rem;
+  //display: flex;
+  font-size: 0.7rem;
+  color: #6e98fc;
+  text-align: left;
+  line-height: 1.9rem;
+  //margin-right: 2.1rem;
+  .ant-input {
+    color: white;
+  }
+  input {
+    //width: 16.4rem !important;
+    height: 1.9rem;
+    background-color: rgba(0, 102, 153, 0.5);
+    border: 1px solid rgba(0, 102, 153, 1);
+    box-sizing: border-box;
+    &::-webkit-input-placeholder {
+      color: #6e98fc;
+    }
+  }
+  .ant-btn {
+    width: 1.9rem;
+    height: 1.9rem;
+    background-color: rgba(0, 102, 153, 0.5);
+  }
+  button {
+    border: 1px solid rgb(0, 51, 159);
+  }
+}
+
+:global .car_table {
+  tr,
+  td {
+    border: 0 !important;
+    //padding: 0.6rem 1.3rem !important;
+    color: #b6d7ff;
+  }
+
+  .ant-table-thead {
+    th {
+      //padding: 0.7rem 1.4rem !important;
+      color: #6e98fc !important;
+      font-weight: 400 !important;
+    }
+
+    .ant-table-cell {
+      border-bottom: 1px solid rgb(13, 98, 146) !important;
+    }
+  }
+
+  .ant-table-tbody {
+    > tr:hover:not(.ant-table-expanded-row) > td,
+    .ant-table-row-hover,
+    .ant-table-row-hover > td {
+      background-color: rgba(0, 51, 153, 1) !important;
+      cursor: pointer;
+    }
+  }
+
+  .ant-table-fixed {
+    .ant-table-row-hover,
+    .ant-table-row-hover > td {
+      background-color: rgba(0, 51, 153, 1) !important;
+      cursor: pointer;
+    }
+  }
+
+  .ant-table {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .ant-table-cell {
+    border: 0 !important;
+    background-color: rgba(15, 30, 75, 0);
+  }
+
+  .ant-table-container {
+    background-color: rgba(15, 30, 75, 0);
+  }
+
+  /*修改滚动条样式*/
+  .ant-table-body::-webkit-scrollbar {
+    width: 0.8rem;
+    height: 0.8rem;
+    /**/
+  }
+
+  .ant-table-body::-webkit-scrollbar-track {
+    background: rgba(2, 19, 255, 0.1);
+    border-radius: 0.1rem;
+  }
+
+  .ant-table-body::-webkit-scrollbar-thumb {
+    background: rgba(0, 51, 153, 0.8);
+    border-radius: 0.8rem;
+  }
+
+  .ant-table-body::-webkit-scrollbar-thumb:hover {
+    background: #333;
+  }
+
+  .ant-table-body::-webkit-scrollbar-corner {
+    background: #179a16;
+  }
+}
+
+.titleChart {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1rem;
+  color: #b6d7ff;
+  margin-right: 1rem;
+}
+
+:global .carCheckbox {
+  & > span:nth-child(2) {
+    font-weight: 400 !important;
+    font-style: normal !important;
+    font-size: 0.8rem !important;
+    color: rgba(182, 215, 255, 0.65) !important;
+    //padding-left: 1.4rem !important;
+    //margin-right: 2.1rem !important;
+  }
+}
+
+.fenbutu {
+  width: 1rem;
+  height: 0.9rem;
+  margin-right: 0.5rem;
+}
+
+.tipsIcon {
+  width: 1.8rem;
+  height: 1.8rem;
+  //margin-right: 2.1rem;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.floatRight {
+  position: absolute;
+  right: 1rem;
+}
+
+.timeDes {
+  font-family: 'PingFangSC-Regular', 'PingFang SC', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.8rem;
+  color: #6e98fc;
+  text-align: right;
+  margin-right: 0.5rem;
+  //margin-left: 2.1rem;
+}
+
+.time {
+  border-width: 0px;
+  width: 8rem;
+  height: 2rem;
+  background-color: rgba(0, 102, 153, 0.5);
+  border: none;
+  border-radius: 0.2rem;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 0.7rem;
+  color: #6e98fc;
+  text-align: center;
+  line-height: 2rem;
+  //padding: 0.6rem;
+}
+
+.messagePopover {
+  :global .ant-popover-inner-content {
+    padding: 0;
+    :global .message-list-box {
+      height: 24rem;
+      overflow: auto;
+      width: 28.5rem;
+      //padding: 0 0.7rem;
+      :global .ant-list-header {
+        padding: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.block {
+  background: #fff;
+  width : 90vw;
+  padding: 1.5rem;
+  margin: 1rem auto ;
+  .photo{
+    width : 50%;
+    margin-bottom: 1rem;
+  }
+  .providerName{
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .textMessage{
+    margin: 1.5rem 0;
+    :global{
+      .am-list-item{
+        padding-left: 0;
+      }
+      .am-list-item .am-list-line .am-list-content{
+        text-overflow: inherit;
+      }
+      .am-list-item .am-list-line{
+        flex: none;
+      }
+      .am-list-item .am-list-line .am-list-extra{
+        text-overflow: inherit;
+      }
+    }
+  }
+  .title {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  :global{
+    .am-button-ghost{
+      color : #E59D57;
+      margin: 0 auto;
+      height: 25px;
+      line-height: 25px;
+    }
+    .am-button{
+      overflow: inherit;
+    }
+    .am-button-ghost::before{
+      border : 1PX solid #E59D57 !important;
+    }
+  }
+}
+
+.returnButton{
+  margin-left: 10px;
+  margin-top: 10px;
+  width : 6rem;
+  font-size: 14px !important;
+}

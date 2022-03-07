@@ -1,0 +1,48 @@
+.noticeDetailContentLeft {
+  width: 880px;
+  margin-right: 20px;
+  height: fit-content;
+  //border: 1px solid #ccc;
+
+  .noticeDetailPackageList {
+    border: 1px solid #ccc;
+    padding: 20px;
+
+    >.noticeDetailContentPackage {
+      .noticeDetailPackageTitle {
+        margin-top: 30px;
+        font-size: 14px;
+        border-bottom:  1px solid #ccc;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        padding-left: 20px;
+      }
+    }
+    h3 {
+      font-weight: normal;
+      color: #333;
+      font-size: 18px;
+      margin-bottom: 10px;
+      padding-left: 20px;
+
+      span {
+        font-size: 16px;
+        margin-left: 20px;
+      }
+    }
+    p {
+      font-size: 14px;
+      line-height: 24px;
+      padding-left: 20px;
+      color: #333;
+
+
+    }
+  }
+
+
+
+  .noticeDetailEnclosure {
+    margin-top: 20px;
+  }
+}

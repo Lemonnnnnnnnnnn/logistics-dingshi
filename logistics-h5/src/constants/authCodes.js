@@ -1,0 +1,339 @@
+
+
+module.exports = {
+
+  BUINESS:'04', // 业务中心
+
+  PROJECT:'0401', // 项目管理
+
+  PROJECT_VISIT: '040101', // 浏览
+
+  PROJECT_CREATE: '040102', // 创建
+
+  PROJECT_MODIFY: '040103', // 修改
+
+  PROJECT_FORBID: '040104', // 禁用
+
+  PROJECT_ENABLE: '040105', // 启用
+
+  PROJECT_DELETE: '040106', // 删除
+
+  PROJECT_ASSIGN: '040107', // 指派
+
+  PROJECT_PLATFORM_REJECT: '040108', // 拒绝（平台）
+
+  PROJECT_ACCEPT: '040109', // 接受
+
+  PROJECT_SHIPMENT_REJECT: '040110', // 拒绝（承运方）
+
+  PROJECT_SHIPMENT_REASSIGN:'040111', // 重新指派（承运方）
+
+  /* **********预约单*********** */
+  PREBOOKING:'0402', // 预约单
+
+  PREBOOKING_VISIT: '040201', // 浏览
+
+  PREBOOKING_CREATE: '040202', // 创建
+
+  PREBOOKING_MODIFY: '040203', // 修改
+
+  PREBOOKING_DELETE: '040204', // 删除
+
+  PREBOOKING_CANCEL: '040205', // 取消
+
+  PREBOOKING_COMPLETE: '040206', // 完结
+
+  /* **********派车单*********** */
+
+  DISPATCH:'0403', // 派车单
+
+  DISPATCH_VISTI: '040301', // 浏览
+
+  DISPATCH_DISPATCHING: '040302', // 调度
+
+  DISPATCH_DELETE: '040303', // 删除
+
+  DISPATCH_REJECT: '040304', // 拒绝
+
+  /* **********运单************ */
+  TRANSPORT:'0404', // 运单
+
+  TRANSPORT_VISIT:'040401', // 浏览
+
+  TRANSPORT_MODIFY:'040402', // 修改
+
+  TRANSPORT_DELETE:'040403', // 删除
+
+  TRANSPORT_JUDGE_RECEIPT:'040404', // 审核回单
+
+  TRANSPORT_JUDGE_EXCEPTION:'040405', // 审核异常
+
+  TRANSPORT_CAR_TRAJECTORY:'040406', // 车辆轨迹
+
+  TRANSPORT_SHIPMENT_MODIFY_RECEIPT:'040407', // 修改回单（承运方）
+
+  /* *********基础设置********* */
+
+  BASIC_SETTING:'03',
+
+  /* *********支付设置********* */
+
+  PAY_SETTING:'0309',
+
+  /* *********货权方管理********* */
+
+  CARGO_SETTING:'0301', // 货权方管理
+
+  CARGO_SETTING_VISIT:'030101', // 浏览
+
+  CARGO_SETTING_ADD:'030102', // 添加
+
+  CARGO_SETTING_DELETE:'030103', // 删除
+
+  /* ********承运方管理********* */
+
+  SHIPMENT_SETTING:'0302', // 承运方管理
+
+  SHIPMENT_SETTING_VISIT:'030201', // 浏览
+
+  SHIPMENT_SETTING_ADD:'030202', // 创建
+
+  SHIPMENT_SETTING_DELETE:'030203', // 删除
+
+  /* **********司机管理********* */
+
+  DRIVER_SETTING:'0303', // 司机管理
+
+  DRIVER_SETTING_VISIT:'030301', // 浏览
+
+  DRIVER_SETTING_CREATE:'030302',  // 创建
+
+  DRIVER_SETTING_DELETE:'030303', // 删除
+
+  /* **********车辆管理********* */
+
+  CAR_SETTING:'0304', // 车辆管理
+
+  CAR_SETTING_VISIT:'030401', // 浏览
+
+  CAR_SETTING_CREATE:'030402', // 创建
+
+  CAR_SETTING_DELETE:'030403', // 删除
+
+  /* ********常用货品管理******* */
+
+  GOODS_SETTING:'0305', // 常用货品管理
+
+  GOODS_SETTING_VISIT:'030501', // 浏览
+
+  GOODS_SETTING_CREATE:'030502', // 创建
+
+  /* ********提货点管理********* */
+
+  DELIVERY_SETTING:'0306', // 提货点管理
+
+  DELIVERY_SETTING_VISIT:'030601', // 浏览
+
+  DELIVERY_SETTING_CREATE:'030602', // 创建
+
+  /* ********卸货点管理********* */
+
+  RECEIVING_SETTING:'0307', // 卸货点管理
+
+  /* ********货品类目管理******* */
+
+  CATEGORY_SETTING:'0308', // 货品类目管理
+
+  /* ********认证中心******* */
+  AUTH_CENTER: '01', // 认证中心
+
+  OPERATION_AUTH: '0101', // 运营方认证
+
+  OPERATION_LIST_AUTH: '010101', // 浏览
+
+  CARGO_AUTH: '0102', // 货权方认证
+
+  CARGO_LIST_AUTH: '010201', // 浏览
+
+  CARGO_JUDGE: '010206', // 审核
+
+  CONSIGNMENT_AUTH: '0103', // 托运方认证
+
+  CONSIGNMENT_LIST_AUTH: '010301', // 浏览
+
+  CONSIGNMENT_JUDGE: '010306', // 审核
+
+  SHIPMENT_AUTH: '0104', // 承运方认证
+
+  SHIPMENT_LIST_AUTH: '010401', // 浏览
+
+  SHIPMENT_JUDGE: '010406', // 审核
+
+  DRIVER_AUTH: '0105', // 司机认证
+
+  DRIVER_LIST_AUTH: '010501', // 浏览
+
+  DRIVER_JUDGE: '010506', // 审核
+
+  CAR_AUTH: '0106', // 车辆认证
+
+  CAR_LIST_AUTH: '010601', // 浏览
+
+  CAR_JUDGE: '010606', // 审核
+
+  /* ***********用户管理************** */
+
+  USER: '02', // 用户设置
+
+  ROLE_SETTING: '0201', // 系统角色
+
+  USER_SETTING: '0202', // 用户管理
+
+  USER_SETTING_VISIT: '020201', // 浏览
+
+  USER_SETTING_CREATE: '020202', // 创建
+
+  USER_SETTING_MODIFY: '020203', // 修改
+
+  USER_SETTING_FORBID: '020204', // 禁用
+
+  USER_SETTING_ENABLE: '020205', // 启用
+
+  USER_SETTING_JUDGE: '020206', // 审核
+
+  USER_SETTING_DELETE: '020207', // 删除
+
+  /* **********承运对平台发起对账************ */
+  ACCOUNT:'05', // 财务权限
+
+  SHIPMENT_TO_PLAT_ACCOUNT: '0501', // 承运对平台发起对账
+
+  SHIPMENT_TO_PLAT_ACCOUNT_VISIT:'050101',  // 浏览
+
+  SHIPMENT_TO_PLAT_ACCOUNT_CREATE:'050102', // 创建
+
+  SHIPMENT_TO_PLAT_ACCOUNT_MODIFY:'050103', // 修改
+
+  SHIPMENT_TO_PLAT_ACCOUNT_CANCEL:'050104', // 作废
+
+  SHIPMENT_TO_PLAT_ACCOUNT_BILL:'050106', //  调账
+
+  SHIPMENT_TO_PLAT_ACCOUNT_PDF:'050107',  //  导出PDF
+
+  SHIPMENT_TO_PLAT_ACCOUNT_EXCEL:'050108',  //  导出EXCEL
+
+  SHIPMENT_TO_PLAT_ACCOUNT_TRANSPORT:'050109', // 导出运单明细
+
+  /* **********承运对托运发起对账************ */
+
+  SHIPMENT_TO_CONSIGNMENT_ACCOUNT: '0502', // 承运对托运发起对账
+
+  SHIPMENT_TO_CONSIGNMENT_ACCOUNT_VISIT:'050201',  // 浏览
+
+  SHIPMENT_TO_CONSIGNMENT_ACCOUNT_CREATE:'050202', // 创建
+
+  SHIPMENT_TO_CONSIGNMENT_ACCOUNT_MODIFY:'050203', // 修改
+
+  SHIPMENT_TO_CONSIGNMENT_ACCOUNT_CANCEL:'050204', // 作废
+
+  SHIPMENT_TO_CONSIGNMENT_ACCOUNT_BILL:'050206', //  调账
+
+  SHIPMENT_TO_CONSIGNMENT_ACCOUNT_PDF:'050207',  //  导出PDF
+
+  SHIPMENT_TO_CONSIGNMENT_ACCOUNT_EXCEL:'050208',  //  导出EXCEL
+
+  SHIPMENT_TO_CONSIGNMENT_ACCOUNT_TRANSPORT:'050209', // 导出运单明细
+
+  /* **********平台对托运发起对账************ */
+
+  PLAT_TO_CONSIGNMENT_ACCOUNT: '0503', // 平台对托运发起对账
+
+  PLAT_TO_CONSIGNMENT_ACCOUNT_VISIT:'050301',  // 浏览
+
+  PLAT_TO_CONSIGNMENT_ACCOUNT_CREATE:'050302', // 创建
+
+  PLAT_TO_CONSIGNMENT_ACCOUNT_MODIFY:'050303', // 修改
+
+  PLAT_TO_CONSIGNMENT_ACCOUNT_CANCEL:'050304', // 作废
+
+  PLAT_TO_CONSIGNMENT_ACCOUNT_BILL:'050306', //  调账
+
+  PLAT_TO_CONSIGNMENT_ACCOUNT_PDF:'050307',  //  导出PDF
+
+  PLAT_TO_CONSIGNMENT_ACCOUNT_EXCEL:'050308',  //  导出EXCEL
+
+  PLAT_TO_CONSIGNMENT_ACCOUNT_TRANSPORT:'050309', // 导出运单明细
+
+  /* **********托运对货权发起对账************ */
+
+  CARGO_ACCOUNT: '0504', // 托运对货权发起对账
+
+  CARGO_ACCOUNT_VISIT:'050401',  // 浏览
+
+  CARGO_ACCOUNT_CREATE:'050402', // 创建
+
+  CARGO_ACCOUNT_MODIFY:'050403', // 修改
+
+  CARGO_ACCOUNT_CANCEL:'050404', // 作废
+
+  CARGO_ACCOUNT_BILL:'050406', //  调账
+
+  CARGO_ACCOUNT_PDF:'050407',  //  导出PDF
+
+  CARGO_ACCOUNT_EXCEL:'050408',  //  导出EXCEL
+
+  CARGO_ACCOUNT_TRANSPORT:'050409', // 导出运单明细
+
+  /* ************平台审核承运对账************ */
+
+  PLAT_TO_SHIPMENT_ACCOUNT:'0505', // 平台审核承运对账
+
+  PLAT_TO_SHIPMENT_ACCOUNT_VISIT:'050501', // 浏览
+
+  PLAT_TO_SHIPMENT_ACCOUNT_EXCEL:'050502', // 导出Excel
+
+  PLAT_TO_SHIPMENT_ACCOUNT_TRANSPORT:'050503', // 导出运单明细
+
+  PLAT_TO_SHIPMENT_ACCOUNT_AUDITE:'050504', // 审核
+
+  /* ************托运审核平台对账************ */
+
+  CONSIGNMENT_TO_PLAT_ACCOUNT:'0506', // 托运审核平台对账
+
+  CONSIGNMENT_TO_PLAT_ACCOUNT_VISIT:'050601', // 浏览
+
+  CONSIGNMENT_TO_PLAT_ACCOUNT_EXCEL:'050602', // 导出Excel
+
+  CONSIGNMENT_TO_PLAT_ACCOUNT_TRANSPORT:'050603', // 导出运单明细
+
+  CONSIGNMENT_TO_PLAT_ACCOUNT_AUDITE:'050604', // 审核
+
+  /* ************托运审核承运对账************ */
+
+  CONSIGNMENT_TO_SHIPMENT_ACCOUNT:'0507', // 托运审核承运对账
+
+  CONSIGNMENT_TO_SHIPMENT_ACCOUNT_VISIT:'050701', // 浏览
+
+  CONSIGNMENT_TO_SHIPMENT_ACCOUNT_EXCEL:'050702', // 导出Excel
+
+  CONSIGNMENT_TO_SHIPMENT_ACCOUNT_TRANSPORT:'050703', // 导出运单明细
+
+  CONSIGNMENT_TO_SHIPMENT_ACCOUNT_AUDITE:'050704', // 审核
+
+  /* ************货权审核托运对账************ */
+
+  CARGO_TO_CONSIGNMENT_ACCOUNT:'0508', // 货权审核托运对账
+
+  CARGO_TO_CONSIGNMENT_ACCOUNT_VISIT:'050801', // 浏览
+
+  CARGO_TO_CONSIGNMENT_ACCOUNT_EXCEL:'050802', // 导出Excel
+
+  CARGO_TO_CONSIGNMENT_ACCOUNT_TRANSPORT:'050803', // 导出运单明细
+
+  CARGO_TO_CONSIGNMENT_ACCOUNT_AUDITE:'050804', // 审核
+
+  /* ************托运小程序 项目看板************ */
+
+  WECHAT_CONSIGNMENT_ACCOUNT_ALL_PRO:'140101', // 所有项目查看权限
+
+}

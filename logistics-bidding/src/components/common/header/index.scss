@@ -1,0 +1,59 @@
+.header {
+  background-color: #14428A;
+  height:  60px;
+
+  .headerContent {
+    color: #fff;
+    line-height: 60px;
+    display: flex;
+    justify-content: space-between;
+
+    >div {
+      a {
+        color: #fff;
+      }
+
+      span {
+        &:first-child {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+.homeSearch {
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+
+  .homeSearchLogo {
+    cursor: pointer;
+
+    img {
+      width: 182px;
+      height: 80px;
+      margin-right: 20px;
+    }
+
+    span {
+      color: #14428A;
+      font-size: 30px;
+    }
+
+  }
+
+  .homeSearchInput {
+    :global {
+      .ant-btn-primary {
+        height: 35px;
+        background-color: #14428A;
+
+      }
+      .ant-input-affix-wrapper {
+        height: 35px;
+        border: 2px solid #1D4F8C;
+      }
+    }
+  }
+}

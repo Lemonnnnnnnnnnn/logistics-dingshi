@@ -1,0 +1,111 @@
+
+.container {
+  width: 100vw;
+  padding: 0 0 50px 0;
+
+  .title {
+    position: relative;
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: #e6f7e6;
+
+    .choose_all {
+      position: absolute;
+      top: 0;
+      right: 10px;
+      .choose_checkbox{
+
+      }
+    }
+    .un_choose_all {
+      position: absolute;
+      top: 4px;
+      right: 10px;
+    }
+
+    .choose_btn {
+      background-color: #008124;
+      color: white;
+    }
+
+    .choose_btn:active {
+      background-color: #80aef5;
+    }
+
+  }
+
+  .card {
+    height: 261px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    .item {
+      position: relative;
+      display: inline-block;
+      padding: 6px 30px 1px 10px;
+      background-color: #f5f5f5;
+      height: auto;
+      text-align: center;
+      border-radius: 2px;
+      margin: 0 10px 10px 0;
+
+      div {
+        width: auto;
+        display: inline-block;
+        max-width: 74vw;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      img {
+        position: absolute;
+        top: 7px;
+        right: 4px;
+        width: 18px;
+      }
+    }
+  }
+
+  .already {
+    .card {
+      width: auto;
+
+      .active {
+        border: 1px solid red;
+        color: red;
+      }
+    }
+
+  }
+
+  .not {
+    .card {
+      .active {
+        border: 1px solid green;
+        color: green;
+      }
+    }
+  }
+
+  .save_btn {
+    margin-top: 20px;
+    background-color: #2E7AF5;
+    color: white;
+  }
+
+  .save_btn:active {
+    background-color: #80aef5;
+  }
+
+  .display {
+    margin-top: 20px;
+    background-color: #949494 !important;
+    color: white;
+  }
+
+
+}

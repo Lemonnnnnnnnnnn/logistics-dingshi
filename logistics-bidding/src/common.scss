@@ -1,0 +1,293 @@
+@charset "UTF-8";
+
+$hd: 2 !default; // 基本单位
+$spacer: 20px * $hd !default;
+$spacers: ( // 间隔  配合margin padding
+  0: (
+    $spacer * 0
+  ),
+  1: (
+    $spacer * 0.25
+  ),
+  2: (
+    $spacer * 0.5
+  ),
+  3: (
+    $spacer * 1
+  ),
+  4: (
+    $spacer * 1.5
+  ),
+  5: (
+    $spacer * 3
+  )
+) !default;
+$positions: static, relative, absolute, fixed, sticky !default;
+$displays: flex, block, inline-block, inline !default;
+//  /* Font */
+$font-size-xs: 10px  !default; // 非常用字号，用于标签
+$font-size-sm: 12px  !default; // 用于辅助信息
+$font-size-base: 14px  !default; // 常用字号
+$font-size-lg: 17px  !default; // 常规标题
+$font-size-xl: 20px  !default; // 大标题
+$font-size-xxl: 30px  !default; // 用于大号的数字
+
+
+:global{
+  * {
+    vertical-align: baseline;
+    box-sizing: border-box;
+  }
+
+  html {
+    line-height: normal;
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  }
+
+  body {
+    background: #fff;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  .center-main  {
+    width: 1200px;
+    margin: 0 auto;
+
+    :global {
+      .ant-table-thead {
+        >tr {
+          >th {
+            padding-left: 16px !important;
+          }
+        }
+      }
+    }
+
+    :global{
+      .ant-input, .ant-picker, .ant-select-selector {
+        width: 300px;
+      }
+    }
+  }
+
+  //表单下面的按钮
+  .commonBtn {
+    text-align: center;
+    margin-top: $spacer;
+
+    :global{
+      .ant-btn {
+        margin-right: 15px;
+      }
+    }
+  }
+  .rowItem{
+    margin-bottom: 10px;
+  }
+
+  // 弹框样式
+  .modal {
+    padding-bottom: 0;
+
+    .modalTitle {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 18px;
+      color: #333;
+
+      :global {
+        .anticon {
+          margin-right: 8px;
+          color: #1890ff;
+          font-size: 24px;
+        }
+      }
+    }
+    :global {
+      .ant-modal-body {
+
+        .ant-form {
+          width: 500px;
+          margin: 0 auto;
+        }
+
+        .ant-form-item {
+          padding-bottom: 20px;
+          display: flex;
+
+          .ant-form-item-label  {
+            text-align: right;
+            flex: 1;
+            min-width: 150px;
+          }
+
+          .ant-input, .ant-select, .ant-radio-group, .ant-upload-picture-card-wrapper, .ant-input-group-wrapper {
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
+
+  .ant-form-item{
+    margin-bottom : 0 !important;
+  }
+
+  /* 最小高度必须是满屏 */
+  .ant-layout-content {
+    min-height: calc(100vh - 315px) !important;
+  }
+
+  .fontP {
+    display: flex;
+    font-size: 14px;
+    font-size: #333;
+  }
+
+  .fontP > span:first-child {
+    color: #999;
+    min-width: 100px;
+  }
+
+
+  .fontP > span:first-child {
+    color: #999;
+  }
+
+  .wrapBox { // 外框公共样式
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+
+  .tdNoPadding {
+    padding: 0 !important;
+
+    p, .tdWarp {
+      margin-bottom: 0;
+      border-bottom: 1px solid #f0f0f0;
+      // line-height: 55px;
+      min-height: 55px;
+      padding: 8px 8px;
+      text-align: center;
+      vertical-align: middle;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      :global {
+        .ant-form-item {
+          margin: 10px 0;
+          margin-bottom: 10px!important;
+        }
+        .ant-input {
+          height: 30px;
+        }
+      }
+    }
+  }
+  /*
+  使用方法： className='mr-1'
+  mr-1 :  margin-right: 8px
+  pt-2 :  padding-top : 16px
+  m-2  : margin : 16px
+  */
+  @each $prop, $abbrev in (margin: m, padding: p) {
+    @each $size, $length in $spacers {
+      .#{$abbrev}-#{$size} {
+        #{$prop}: $length !important;
+      }
+
+      .#{$abbrev}t-#{$size}{
+        #{$prop}-top: $length !important;
+      }
+
+      .#{$abbrev}r-#{$size}{
+        #{$prop}-right: $length !important;
+      }
+
+      .#{$abbrev}b-#{$size}{
+        #{$prop}-bottom: $length !important;
+      }
+
+      .#{$abbrev}l-#{$size}{
+        #{$prop}-left: $length !important;
+      }
+    }
+  }
+
+  .text{
+    // 字体居中
+    &-center {
+      text-align: center !important;
+    }
+    // 字体粗细
+    &-bold {
+      font-weight: bold;
+    }
+    // 链接
+    &-link{
+      color: #1890ff;
+      cursor: pointer
+    }
+    // 字体大小
+    &-super {
+      line-height: $font-size-xxl * 1.5;
+      font-size: $font-size-xxl;
+    }
+
+    &-huge {
+      line-height: $font-size-xl * 1.5;
+      font-size: $font-size-xl;
+    }
+
+    &-large {
+      line-height: $font-size-lg * 1.5;
+      font-size: $font-size-lg;
+    }
+
+    &-normal {
+      line-height: $font-size-base * 1.5;
+      font-size: $font-size-base;
+    }
+
+    &-small {
+      line-height: $font-size-sm * 1.5;
+      font-size: $font-size-sm;
+    }
+
+    &-mini {
+      line-height: $font-size-xs * 1.5;
+      font-size: $font-size-xs;
+    }
+    &-ellipsis{
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .border{
+    &-gray{
+      border: 1px solid #ccc;
+    }
+  }
+
+  @each $position in $positions {
+    .position-#{$position} {
+      position: $position !important;
+    }
+  }
+
+  @each $display in $displays {
+    .display-#{$display} {
+      display: $display;
+    }
+  }
+
+}
+
